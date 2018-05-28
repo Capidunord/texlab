@@ -1,0 +1,240 @@
+% \usepackage[amsmath,framed,thmmarks,hyperref]{ntheorem}
+\usepackage{amsthm}
+
+% Couleurs
+\definecolor{theoremcolor}{RGB}{255,117,117}
+\definecolor{definitioncolor}{RGB}{111,214,145}
+\definecolor{commandcolor}{RGB}{66,173,244}
+\definecolor{proofcolor}{RGB}{0,0,0}
+\definecolor{exercisecolor}{RGB}{255,199,122}
+\definecolor{remarkcolor}{RGB}{137,137,137}
+\definecolor{methodcolor}{RGB}{105,188,155}
+\definecolor{commentcolor}{RGB}{244,113,66}
+\definecolor{subjectcolor}{RGB}{244,116,65}
+
+\newcounter{dummy}
+
+% Général
+\tcbset{
+    globalbox/.style={
+            enhanced jigsaw,
+            boxrule=0pt,
+            arc=0mm,
+            outer arc=0mm,
+            leftrule=4pt,
+            bottomrule=0.5pt,
+            toprule=0.5pt,
+            rightrule=0.5pt,
+            fonttitle=\bfseries,
+            breakable=true,
+            separator sign dash,
+        }
+}
+
+% Théorèmes
+\tcbset{
+    theorembox/.style={
+            colframe=theoremcolor,
+            colback=theoremcolor!5,
+            coltitle=theoremcolor!20!black,
+            title style={theoremcolor!50},
+        }
+}
+
+\newtcbtheorem[use counter=dummy, number within=section]{theorem}{Théorème}{globalbox,theorembox,label type=theorem}{theorems}
+\crefname{theorem}{Théorème}{Théorèmes}
+
+\newtcbtheorem[use counter=dummy, number within=section]{property}{Propriété}{globalbox,theorembox,label type=property}{properties}
+\crefname{property}{Propriété}{Propriétés}
+
+\newtcbtheorem[use counter=dummy, number within=section]{corollary}{Corollaire}{globalbox,theorembox,label type=corollary}{corollaries}
+\crefname{corollary}{Corollaire}{Corollaires}
+
+\newtcbtheorem[use counter=dummy, number within=section]{lemma}{Lemme}{globalbox,theorembox,label type=lemma}{lemmas}
+\crefname{lemma}{Lemme}{Lemmes}
+
+% Définition
+\tcbset{
+    definitionbox/.style={
+            colframe=definitioncolor,
+            colback=definitioncolor!5,
+            coltitle=definitioncolor!20!black,
+            title style={definitioncolor!50},
+        }
+}
+
+\newtcbtheorem[use counter=dummy, number within=section]{definition}{Définition}{globalbox,definitionbox,label type=definition}{definitions}
+\crefname{definition}{Définition}{Définitions}
+
+% Commandes
+\tcbset{
+    commandbox/.style={
+            colframe=commandcolor,
+            colback=commandcolor!5,
+            coltitle=commandcolor!20!black,
+            title style={commandcolor!50},
+        }
+}
+
+\newtcbtheorem[use counter=dummy, number within=section]{command}{Commande}{globalbox,commandbox,label type=command}{commands}
+\crefname{command}{Commande}{Commandes}
+
+% Exercices
+\tcbset{
+    exercisebox/.style={
+            colframe=exercisecolor,
+            colback=exercisecolor!5,
+            coltitle=exercisecolor!20!black,
+            title style={exercisecolor!50},
+        }
+}
+
+\newtcbtheorem[use counter=dummy, number within=section]{exercise}{Exercice}{globalbox,exercisebox,label type=exercise}{exercises}
+\crefname{exercise}{Exercice}{Exercices}
+
+\newtcbtheorem[use counter=dummy, number within=section]{example}{Exemple}{globalbox,exercisebox,label type=example, leftrule=0pt, rightrule=0pt}{examples}
+\crefname{example}{Exemple}{Exemples}
+
+% Correction d'exercice
+% \theoremheaderfont{\sc}\theorembodyfont{\upshape}
+% \theoremstyle{nonumberbreak}
+% \theoremseparator{}
+% \theoremsymbol{\rule{1ex}{1ex}}
+\theoremstyle{definition}
+\newtheorem*{correction}{Correction}
+
+% \tcolorboxenvironment
+% {correction}{
+%     blanker,breakable,left=5mm,
+%     before skip=10pt,after skip=10pt,
+%     borderline west={1mm}{0pt}{exercisecolor}}
+
+\tcolorboxenvironment{correction}{% 'proof' from 'amsthm'
+blanker,breakable,left=5mm,
+before skip=10pt,after skip=10pt,
+borderline west={1mm}{0pt}{exercisecolor}}
+
+% Remarque
+\tcbset{
+    remarkbox/.style={
+            breakable,
+            enhanced,
+            colback=remarkcolor!5,
+            colframe=remarkcolor,
+            arc=0pt,
+            outer arc=0pt,
+            % fonttitle=\bfseries\sffamily\large,
+            fonttitle=\bfseries,
+            boxrule=1pt,
+            colbacktitle=remarkcolor,
+            attach boxed title to top left={},
+            boxed title style={
+                    enhanced,
+                    skin=enhancedfirst jigsaw,
+                    arc=0pt,
+                    bottom=0pt,
+                    interior style={fill=remarkcolor}
+                }
+        }
+}
+
+\newtcbtheorem[use counter=dummy, number within=section]{remark}{Remarque}{remarkbox,label type=remark}{remarks}
+\crefname{remark}{Remarque}{Remarques}
+
+% Méthode
+\tcbset{
+    methodbox/.style={
+            colback=methodcolor!5,
+            colframe=methodcolor,
+            colbacktitle=methodcolor,
+            attach boxed title to top center={},
+            boxed title style={
+                    enhanced,
+                    skin=enhancedfirst jigsaw,
+                    arc=0pt,
+                    bottom=0pt,
+                    interior style={fill=methodcolor}
+                }
+        }
+}
+
+\newtcbtheorem[use counter=dummy, number within=section]{method}{Méthode}{remarkbox,methodbox, label type=method}{methods}
+\crefname{method}{Méthode}{Méthodes}
+
+% Commentaire
+\tcbset{
+    commentbox/.style={
+            colback=commentcolor!5,
+            colframe=commentcolor,
+            colbacktitle=commentcolor,
+            attach boxed title to top right={},
+            boxed title style={
+                    enhanced,
+                    skin=enhancedfirst jigsaw,
+                    arc=0pt,
+                    bottom=0pt,
+                    interior style={fill=commentcolor}
+                }
+        }
+}
+
+\newtcolorbox{note}[1][Commentaire]{remarkbox,commentbox,title=#1}
+
+% Démonstrations
+% \theoremheaderfont{\sc}\theorembodyfont{\upshape}
+% \theoremstyle{nonumberbreak}
+% \theoremseparator{}
+% \theoremsymbol{\rule{1ex}{1ex}}
+% \newtheorem{proof}{Démonstration}
+
+% \tcolorboxenvironment
+% {proof}{
+%     % ’proof’ from ’amsthm’
+%     blanker,breakable,left=5mm,
+%     before skip=10pt,after skip=10pt,
+%     borderline west={1mm}{0pt}{proofcolor}}
+
+\tcolorboxenvironment{proof}{% 'proof' from 'amsthm'
+blanker,breakable,left=5mm,
+before skip=10pt,after skip=10pt,
+borderline west={1mm}{0pt}{proofcolor}}
+
+% Sujet (oral)
+% \tcbset{
+%     subjectbox/.style={
+%             colback=subjectcolor!5,
+%             colback=white,
+%             colframe=subjectcolor!40,
+%             colbacktitle=subjectcolor,
+%             coltitle=subjectcolor!20!black,
+%             % attach boxed title to top center={yshift=-2.5mm},
+%             attach boxed title to top center={},
+%             boxrule=1pt,
+%             boxed title style={
+%                     enhanced,
+%                     skin=enhancedfirst jigsaw,
+%                     arc=0pt,
+%                     bottom=0pt,
+%                     % interior style={fill=subjectcolor}
+%                     interior style={fill=subjectcolor!10}
+%                 }
+%         }
+% }
+
+\tcbset{
+    subjectbox/.style={
+            colback=subjectcolor!5,
+            colback=white,
+            colframe=subjectcolor!40,
+            colbacktitle=subjectcolor!40,
+            coltitle=subjectcolor!20!black,
+            center title,
+            leftrule=0.5pt,
+    }
+}
+
+% \newtcolorbox{kholle}[1][]{remarkbox,khollebox,breakable=true,title={Sujet de khôlle\ifthenelse{\isempty{#1}}{}{ - #1}}}
+\newcounter{subject}
+% \newtcbtheorem[use counter=subject]{subject}{Sujet}{remarkbox,subjectbox,breakable=true}{subjects}
+\newtcbtheorem[use counter=subject]{subject}{Sujet}{globalbox,subjectbox,breakable=true}{subjects}
+\newtcbtheorem[number within=subject]{subjectexercise}{Exercice}{globalbox,exercisebox,label type=exercise}{exercises}

@@ -1,0 +1,41 @@
+\usepackage{minted}
+\tcbuselibrary{minted}
+
+% \newenvironment{code}[1]{\VerbatimEnvironment\begin{minted}[xleftmargin=\parindent,breaklines,linenos,frame=lines,autogobble,numbersep=5pt]{#1}}{\end{minted}}
+\newcommand{\inlinecode}[2]{\mintinline{#1}|#2|}
+% \usemintedstyle{manni}
+
+\tcbset{
+    codebox/.style={
+        enhanced jigsaw,
+        arc=1pt,
+        outer arc=1pt,
+        listing engine=minted,
+        minted style=manni,
+        minted options={breaklines,linenos,autogobble,numbersep=3mm},
+        left=5mm,
+        breakable,
+        overlay={\begin{tcbclipinterior}\fill[red!20!blue!20!white] (frame.south west)rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}},
+        boxrule=1pt,
+        colframe=gray,
+    }
+}
+
+\newtcblisting{code}[1]{
+    codebox,
+    minted language=#1,
+    listing only
+}
+
+\newtcblisting{latexcode}{
+    codebox,
+    minted language=latex,
+    colbacklower=white
+}
+
+\newtcblisting{latexcodesbs}{
+    codebox,
+    minted language=latex,
+    colbacklower=white,
+    listing side text
+}

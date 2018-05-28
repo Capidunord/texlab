@@ -1,0 +1,130 @@
+%!TEX root = ../manual.tex
+
+\section{Théorèmes}
+
+    Le style général des théorèmes est le suivant :
+
+    \begin{latexcode}
+        \begin{theorem}{}{}
+            Voici un théorème merveilleux : $$1^2=\pth{-1}^2$$
+        \end{theorem}
+    \end{latexcode}
+
+    Ils peuvent avoir des noms :
+
+    \begin{latexcode}
+        \begin{theorem}{Formule d'Euler}{}
+            Pour tout réel $x$ : $$e^{ix} = \cos\pth{x} + \sin\pth{x}$$
+        \end{theorem}
+    \end{latexcode}
+
+    Ils peuvent être référencés :
+
+    \begin{latexcode}
+        \begin{property}{}{cov}
+            Soient $X$ et $Y$ deux variables aléatoires discrètes, définies sur un même espace probabilisé, et admettant un moment d'ordre $2$. Si $X$ et $Y$ sont indépendantes, alors $\cov\pth{X,Y} = 0$.
+        \end{property}
+
+        La propriété \cref{properties:cov} permet de prouver que, si $X$ et $Y$ sont deux variables aléatoires discrètes définies sur un même espace probabilisé et admettant un moment d'ordre $2$, alors $X+Y$ admet une variance et $$V\pth{X+Y} = V\pth{X} + V\pth{Y}$$
+    \end{latexcode}
+
+    Voici les environnements de type théorème définis :
+
+    \subsection{Théorèmes, propriétés, corollaires, lemmes}
+
+    \begin{latexcode}
+        \begin{theorem}{}{}
+            Ceci est un théorème.
+        \end{theorem}
+    \end{latexcode}
+
+    \begin{latexcode}
+        \begin{property}{}{}
+            Ceci est une propriété.
+        \end{property}
+    \end{latexcode}
+
+    \begin{latexcode}
+        \begin{lemma}{}{}
+            Ceci est un lemme
+        \end{lemma}
+    \end{latexcode}
+
+    \begin{latexcode}
+        \begin{corollary}{}{}
+            Ceci est un corollaire.
+        \end{corollary}
+    \end{latexcode}
+
+    \begin{latexcode}
+        \begin{proof}
+            Ceci est sa démonstration.
+        \end{proof}
+    \end{latexcode}
+
+    \subsection{Définitions}
+
+    \begin{latexcode}
+        \begin{definition}{}{}
+            Ceci est une définition.
+        \end{definition}
+    \end{latexcode}
+    \subsection{Commandes}
+
+    \begin{latexcode}
+        \begin{command}{}{}
+            Ceci est une commande.
+        \end{command}
+    \end{latexcode}
+
+    \subsection{Exercices}
+
+    \begin{latexcode}
+        \begin{exercise}{}{}
+            Ceci est un exercice.
+        \end{exercise}
+    \end{latexcode}
+
+    \begin{latexcode}
+        \begin{correction}
+            Et ceci est sa correction.
+        \end{correction}
+    \end{latexcode}
+
+    \begin{latexcode}
+        \begin{example}
+            Ceci est un exemple.
+        \end{example}
+    \end{latexcode}
+
+    \begin{latexcode}
+        \begin{remark}{}{}
+            Test.
+        \end{remark}
+    \end{latexcode}
+
+    \begin{latexcode}
+        \begin{method}{Montrer qu'une famille est libre}{}
+            Test.
+        \end{method}
+    \end{latexcode}
+
+    \begin{latexcode}
+        \begin{note}
+            Commentaire.
+        \end{note}
+    \end{latexcode}
+
+    \begin{latexcode}
+        \begin{note}[Note]
+            Commentaire avec un titre
+        \end{note}
+    \end{latexcode}
+
+    \begin{latexcode}
+        \begin{subject}{}{}
+            \begin{subjectexercise}{Cours}{}
+                Ceci est un exercice de cours.
+            \end{subjectexercise}
+        \end{subject}
+    \end{latexcode}

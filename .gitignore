@@ -1,0 +1,16 @@
+*.log
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.thm
+*.xdv
+_minted-*
+*.toc
+*.listing
+*.synctex.gz
+pythontex-files*
+*.pytxcode
+__pycache__/
+__pycache__/*
+*.pyc

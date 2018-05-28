@@ -1,0 +1,42 @@
+%!TEX root = ../manual.tex
+
+\section{Python}
+
+    \begin{pycode}
+import sys
+sys.path.insert(0, '../imports/python')
+    \end{pycode}
+
+    Pour utiliser \verb|python|, il faut ajouter les lignes suivantes au préambule :
+
+    \begin{code}{latex}
+        \input{\templatesroot/imports/python/python}
+        \begin{pycode}
+            import sys
+            sys.path.insert(0, '<chemin_vers_texlab>/imports/python')
+        \end{pycode}
+    \end{code}
+
+    \begin{latexcode}
+\begin{pycode}
+from sympy import Matrix, latex, symbols, S
+from linear_algebra.linear_system import System
+
+x,y,z = symbols('x y z')
+A = Matrix(3,3,[1,2,3,4,5,6,7,8,9])
+X = Matrix(3,1,[x,y,z])
+Y = Matrix(3,1,[4,5,-5])
+
+syst = System(A,X,Y)
+\end{pycode}
+        \begin{align*}
+            \py{syst.to_latex()} & \iff \pyc{syst.transvection(2,1,-4)}
+                \pyc{syst.transvection(3,1,-7)}
+                \py{syst.to_latex()} \\
+                                 & \iff \pyc{syst.multiply(2, S(-1)/3)}
+                \pyc{syst.multiply(3,S(-1)/6)}
+                \py{syst.to_latex()} \\
+                                 & \iff \pyc{syst.transvection(3,2,-1)}
+                \py{syst.to_latex()}
+        \end{align*}
+    \end{latexcode}

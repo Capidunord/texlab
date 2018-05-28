@@ -1,0 +1,17 @@
+%!TEX root = ../manual.tex
+
+\section{Installation et utilisation}
+    \subsection{Installation}
+        Copier le répertoire \verb|texlab| n'importe où sur votre disque (la racine de votre project latex peut être une bonne idée). Dans ce manuel, ce répertoire sera copié dans \verb|C:|, et ses fichiers sont donc accessibles dans \verb|C:\texlab|.
+
+        Pour utiliser toutes les fonctionnalités de \verb|texlab|, \href{https://www.python.org/}{python} doit être installé sur votre système, ainsi que le package \verb|pygments|, que l'on peut installer avec la commande
+        \begin{code}{shell}
+             pip install pygments
+        \end{code} 
+
+    \subsection{Mise en place}
+        Pour utiliser \verb|texlab|, il suffit de créer un document et de commencer son préambule comme suit :
+        \begin{code}{latex}
+            \newcommand{\templatesroot}{C:/texlab}
+            \input{\templatesroot/templates/article}
+        \end{code}

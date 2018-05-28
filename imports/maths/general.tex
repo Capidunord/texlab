@@ -1,0 +1,74 @@
+% Parenthèses, valeurs absolues...
+\newcommand{\pth}[1]{\ensuremath{\left( #1 \right)}}
+\newcommand{\vabs}[1]{\ensuremath{\left| #1 \right|}}
+\newcommand{\floor}[1]{\ensuremath{\left \lfloor #1 \right \rfloor}}
+\newcommand{\acc}[1]{\ensuremath{\left\{ #1 \right\}}}
+\newcommand{\itv}[4]{\ensuremath{
+\ifthenelse{\equal{#1}{o}}{\left]}{\left[}#3;#4\ifthenelse{\equal{#2}{o}}{\right[}{\right]}
+}}
+\newcommand{\sqbrackets}[1]{\ensuremath{\left[ #1 \right]}}
+\newcommand{\itve}[4]{\ensuremath{
+\ifthenelse{\equal{#1}{o}}{\left]\!\left]}{\left[\!\left[}#3;#4\ifthenelse{\equal{#2}{o}}{\right[\!\right[}{\right]\!\right]}
+}}
+
+% Vecteurs
+\newcommand{\norm}[1]{\ensuremath{\left\lVert #1 \right\rVert}}
+\usepackage{esvect} % commande \vv pour les flèches sur les vecteurs (\vv{AB})
+
+% Complexes
+\newcommand{\conj}[1]{\ensuremath{\overline{#1}}}
+
+% Limites
+\newcommand{\tdsto}[1]{\ensuremath{\xrightarrow[#1]{}}}
+
+% Probas
+\newcommand{\comp}[1]{\ensuremath{\overline{#1}}}
+\newcommand{\mean}[1]{\ensuremath{\overline{#1}}}
+
+% Comparaisons (petits o, grands O, équivalents)
+\newcommand{\po}[2]{\ensuremath{\underset{#1}{o}\pth{#2}}}
+\newcommand{\go}[2]{\ensuremath{\underset{#1}{O}\pth{#2}}}
+\newcommand{\eq}[1]{\ensuremath{\underset{#1}{\sim}}}
+
+% Opérateurs
+\DeclareMathOperator{\cov}{Cov}
+\DeclareMathOperator{\vect}{Vect}
+\newcommand{\dd}{\text{d}}
+\DeclareMathOperator{\sh}{sh}
+\DeclareMathOperator{\ch}{ch}
+\DeclareMathOperator{\thh}{th}
+
+\DeclareMathOperator{\rg}{rg}
+
+\DeclareMathOperator{\id}{id}
+
+\DeclareMathOperator{\mat}{Mat}
+
+% Ensembles
+\newcommand{\setN}{\mathbb{N}}
+\newcommand{\setR}{\mathbb{R}}
+\newcommand{\setQ}{\mathbb{Q}}
+\newcommand{\setD}{\mathbb{D}}
+\newcommand{\setZ}{\mathbb{Z}}
+\newcommand{\setK}{\mathbb{K}}
+
+% Calligraphie
+\newcommand{\aA}{\mathcal{A}}
+\newcommand{\bB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\mM}{\mathcal{M}}
+\newcommand{\lL}{\mathcal{L}}
+\newcommand{\eE}{\mathcal{E}}
+
+% phi, epsilon
+\renewcommand{\phi}{\varphi}
+\renewcommand{\epsilon}{\varepsilon}
+
+% Fonctions
+\newcommand{\fonc}[5]{\ensuremath{\begin{array}{ccccl}
+            #1 & \text{:} & #2 & \to     & #3 \\
+               &          & #4 & \mapsto & #5
+        \end{array}}}
+
+% Transposée
+\newcommand{\transp}{{}^t}
