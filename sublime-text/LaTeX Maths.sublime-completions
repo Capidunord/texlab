@@ -24,6 +24,10 @@
         { "trigger": "acc\t{...}", "contents": "\\acc{$1}$0"},
 
         // Probas
-        { "trigger": "complementary\tcomplementary", "contents": "\\comp{$1}$0"}
+        { "trigger": "complementary\tcomplementary", "contents": "\\comp{$1}$0"},
+        { "trigger": "binom\tbinomial coeff", "contents": "\\binom{$1}{$2}$0"},
+
+        // Matrices
+        { "trigger": "pmatrix\tpmatrix", "contents": "\\begin{pmatrix}\n\t$0\n\\end{pmatrix}"}
     ]
 }
