@@ -1,0 +1,15 @@
+{
+    "scope": "text.tex.latex - (string.other.math, meta.environment.math)",
+
+    "completions":
+    [
+        // templates
+        { "trigger": "new article", "contents": "% !TEX program = xelatex\n\n\\newcommand{\\templatesroot}{C:/texlab}\n\\input{\\templatesroot/templates/article.tex}\n\n\\title{}\n\\author{}\n\\date{}\n\n\\begin{document}\n$0\n\\end{document}"},
+
+        // environments
+        { "trigger": "align*", "contents": "\\begin{align*}\n\t$0\n\\end{align*}"},
+        { "trigger": "remark\t remark", "contents": "\\begin{remark}{$1}{$2}\n\t$0\n\\end{remark}"},
+        { "trigger": "correction\t correction", "contents": "\\begin{correction}{$1}{$2}\n\t$0\n\\end{correction}"},
+        { "trigger": "code\tcode", "contents": "\\begin{code}{$1}\n\t$0\n\\end{code}"}
+    ]
+}

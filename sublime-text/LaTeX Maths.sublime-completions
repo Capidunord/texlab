@@ -1,0 +1,29 @@
+{
+    "scope": "text.tex.latex string.other.math, text.tex.latex meta.environment.math",
+
+    "completions":
+    [
+        { "trigger": "interval\tinterval", "contents": "\\itv{$1}{$2}{$3}{$4}$0"},
+        { "trigger": "integers interval\tintegers interval", "contents": "\\itve{$1}{$2}{$3}{$4}$0"},
+        { "trigger": "frac\tfraction", "contents": "\\frac{$1}{$2}$0"},
+        { "trigger": "sqrt\tsquare root", "contents": "\\sqrt{$1}$0"},
+        { "trigger": "sqrt\tn-th root", "contents": "\\sqrt[$1]{$2}$0"},
+        { "trigger": "integral\tintegral", "contents": "\\int_{$1}^{$2} $4 \\dd $3$0"},
+        { "trigger": "sum\tsum", "contents": "\\sum_{$1}^{$2} $0"},
+        { "trigger": "limit\tlimit", "contents": "\\lim_{$1} $0"},
+        { "trigger": "tends to\ttends to", "contents": "\\tdsto{$1} $0"},
+
+        // Sets
+        { "trigger": "setr\t IR", "contents": "\\setR"},
+        { "trigger": "setn\t IN", "contents": "\\setN"},
+
+        // Brackets, parenthesis...
+        { "trigger": "pth\t(...)", "contents": "\\pth{$1}$0"},
+        { "trigger": "squared brackets\t[...]", "contents": "\\sqbrackets{$1}$0"},
+        { "trigger": "vabs\t|...|", "contents": "\\vabs{$1}$0"},
+        { "trigger": "acc\t{...}", "contents": "\\acc{$1}$0"},
+
+        // Probas
+        { "trigger": "complementary\tcomplementary", "contents": "\\comp{$1}$0"}
+    ]
+}
