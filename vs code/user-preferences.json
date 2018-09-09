@@ -27,7 +27,8 @@
         "*.listing",
         "*.pytxcode",
         "*.synctex.gz",
-        "*.thm"
+        "*.thm",
+        "*.xdv"
     ],
     "latex-workshop.view.pdf.viewer": "external",
     "latex-workshop.latex.tools": [
@@ -38,7 +39,7 @@
                 "-synctex=1",
                 "-interaction=nonstopmode",
                 "-file-line-error",
-                "-pdf",
+                "-xelatex",
                 "%DOC%"
             ]
         },
@@ -111,5 +112,34 @@
     ],
     "[latex]": {
         "editor.wordBasedSuggestions": false,
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.wordWrap": "on",
     },
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "cSpell.language": ",fr,en",
+    "cSpell.userWords": [
+        "CQFD",
+        "Lorsqu'un",
+        "lorsqu'il",
+        "symétrisable"
+    ],
+    "window.titleBarStyle": "custom",
+    "editor.fontSize": 15,
+    "latex-workshop.view.pdf.external.synctex": {
+        "command": "SumatraPDF",
+        "args": [
+            "-forward-search",
+            "%TEX%",
+            "%LINE%",
+            "-reuse-instance",
+            "-inverse-search",
+            "\"C:\\Users\\steph\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" -g \"%f:%l\"",
+            "%PDF%"
+        ]
+    }
 }
