@@ -11,6 +11,8 @@
         { "trigger": "remark\t remark", "contents": "\\begin{remark}{$1}{$2}\n\t$0\n\\end{remark}"},
         { "trigger": "correction\t correction", "contents": "\\begin{correction}\n\t$0\n\\end{correction}"},
         { "trigger": "correction\t correction with title", "contents": "\\begin{correction}[$1]\n\t$0\n\\end{correction}"},
-        { "trigger": "code\tcode", "contents": "\\begin{code}{$1}\n\t$0\n\\end{code}"}
+        { "trigger": "code\tcode", "contents": "\\begin{code}{$1}\n\t$0\n\\end{code}"},
+        { "trigger": "subject\tsubject", "contents": "\\begin{subject}{}{}\n\t$0\n\\end{subject}"},
+        { "trigger": "subject_exercise\tsubject exercise", "contents": "\\begin{subjectexercise}{}{}\n\t$0\n\\end{subjectexercise}"}
     ]
 }
