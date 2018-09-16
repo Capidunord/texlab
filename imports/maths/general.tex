@@ -71,10 +71,11 @@
 \renewcommand{\epsilon}{\varepsilon}
 
 % Fonctions
-\newcommand{\fonc}[5]{\ensuremath{\begin{array}{ccccl}
+\newcommand{\func}[5]{\ensuremath{\begin{array}{ccccl}
             #1 & \text{:} & #2 & \to     & #3 \\
                &          & #4 & \mapsto & #5
-        \end{array}}}
+        \end{array}}
+\newcommand{\fonc}[5]{\func{#1}{#2}{#3}{#4}{#5}}
 
 % Transposée
 \newcommand{\transp}{{}^t}
