@@ -22,6 +22,7 @@
         { "trigger": "squared brackets\t[...]", "contents": "\\sqbrackets{$1}$0"},
         { "trigger": "vabs\t|...|", "contents": "\\vabs{$1}$0"},
         { "trigger": "acc\t{...}", "contents": "\\acc{$1}$0"},
+        { "trigger": "norm\tnorm", "contents": "\\norm{$1}$0"},
 
         // Probas
         { "trigger": "complementary\tcomplementary", "contents": "\\comp{$1}$0"},
@@ -31,6 +32,6 @@
         { "trigger": "pmatrix\tpmatrix", "contents": "\\begin{pmatrix}\n\t$0\n\\end{pmatrix}"},
 
         // Fonctions
-        { "trigger": "function\tfunction", "contents": "\\func{$1}{$2}{$3}{$4}{$5}$0"}
+        { "trigger": "function\tfunction", "contents": "\\func{$1}{$2}{$3}{$4}{$5}$0"},
     ]
 }
