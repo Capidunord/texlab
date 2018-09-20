@@ -9,10 +9,13 @@
         // environments
         { "trigger": "align*", "contents": "\\begin{align*}\n\t$0\n\\end{align*}"},
         { "trigger": "remark\t remark", "contents": "\\begin{remark}{$1}{$2}\n\t$0\n\\end{remark}"},
+        { "trigger": "note\tnote", "contents": "\\begin{note}\n\t$0\n\\end{note}"},
+        { "trigger": "note\tnote with title", "contents": "\\begin{note}[$1]\n\t$0\n\\end{note}"},
         { "trigger": "correction\t correction", "contents": "\\begin{correction}\n\t$0\n\\end{correction}"},
         { "trigger": "correction\t correction with title", "contents": "\\begin{correction}[$1]\n\t$0\n\\end{correction}"},
         { "trigger": "code\tcode", "contents": "\\begin{code}{$1}\n\t$0\n\\end{code}"},
         { "trigger": "subject\tsubject", "contents": "\\begin{subject}{$1}{$2}\n\t$0\n\\end{subject}"},
-        { "trigger": "subject_exercise\tsubject exercise", "contents": "\\begin{subjectexercise}{$1}{$2}\n\t$0\n\\end{subjectexercise}"}
+        { "trigger": "subject_exercise\tsubject exercise", "contents": "\\begin{subjectexercise}{$1}{$2}\n\t$0\n\\end{subjectexercise}"},
+        { "trigger": "exercise\texercise", "contents": "\\begin{exercise}{$1}{$2}\n\t$0\n\\end{exercise}"}
     ]
 }
