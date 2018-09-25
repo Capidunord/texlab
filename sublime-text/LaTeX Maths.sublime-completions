@@ -10,6 +10,7 @@
         { "trigger": "sqrt\tn-th root", "contents": "\\sqrt[$1]{$2}$0"},
         { "trigger": "integral\tintegral", "contents": "\\int_{$1}^{$2} $4 \\dd $3$0"},
         { "trigger": "sum\tsum", "contents": "\\sum_{$1}^{$2} $0"},
+        { "trigger": "prod\tprod", "contents": "\\prod_{$1}^{$2} $0"},
         { "trigger": "limit\tlimit", "contents": "\\lim_{$1} $0"},
         { "trigger": "tends to\ttends to", "contents": "\\tdsto{$1} $0"},
 
