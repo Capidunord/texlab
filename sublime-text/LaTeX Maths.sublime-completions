@@ -32,6 +32,10 @@
         { "trigger": "pmatrix\tpmatrix", "contents": "\\begin{pmatrix}\n\t$0\n\\end{pmatrix}"},
 
         // Fonctions
-        { "trigger": "function\tfunction", "contents": "\\func{$1}{$2}{$3}{$4}{$5}$0"}
+        { "trigger": "function\tfunction", "contents": "\\func{$1}{$2}{$3}{$4}{$5}$0"},
+
+        //superscript, subscript
+        { "trigger": "superscript\tsuperscript", "contents": "^{$1}$0"},
+        { "trigger": "subscript\tsubscript", "contents": "_{$1}$0"}
     ]
 }
