@@ -36,6 +36,9 @@
 
         //superscript, subscript
         { "trigger": "superscript\tsuperscript", "contents": "^{$1}$0"},
-        { "trigger": "subscript\tsubscript", "contents": "_{$1}$0"}
+        { "trigger": "subscript\tsubscript", "contents": "_{$1}$0"},
+
+        // Comparisons
+        { "trigger": "po\to", "contents": "\\po{$1}{$2}$0"}
     ]
 }

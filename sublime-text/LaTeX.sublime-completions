@@ -16,6 +16,13 @@
         { "trigger": "code\tcode", "contents": "\\begin{code}{$1}\n\t$0\n\\end{code}"},
         { "trigger": "subject\tsubject", "contents": "\\begin{subject}{$1}{$2}\n\t$0\n\\end{subject}"},
         { "trigger": "subject_exercise\tsubject exercise", "contents": "\\begin{subjectexercise}{$1}{$2}\n\t$0\n\\end{subjectexercise}"},
-        { "trigger": "exercise\texercise", "contents": "\\begin{exercise}{$1}{$2}\n\t$0\n\\end{exercise}"}
+        { "trigger": "exercise\texercise", "contents": "\\begin{exercise}{$1}{$2}\n\t$0\n\\end{exercise}"},
+        { "trigger": "example\texample", "contents": "\\begin{example}{$1}{$2}\n\t$0\n\\end{example}"},
+        { "trigger": "definition\tdefinition", "contents": "\\begin{definition}{$1}{$2}\n\t$0\n\\end{definition}"},
+        { "trigger": "property\tproperty", "contents": "\\begin{property}{$1}{$2}\n\t$0\n\\end{property}"},
+        { "trigger": "proof\tproof", "contents": "\\begin{proof}\n\t$0\n\\end{proof}"},
+        { "trigger": "proof\tproof with title", "contents": "\\begin{proof}[$1]\n\t$0\n\\end{proof}"},
+        { "trigger": "theorem\ttheorem", "contents": "\\begin{theorem}{$1}{$2}\n\t$0\n\\end{theorem}"},
+        { "trigger": "corollary", "contents": "\\begin{corollary}{$1}{$2}\n\t$0\n\\end{corollary}"},
     ]
 }
