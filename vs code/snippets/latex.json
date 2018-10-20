@@ -447,8 +447,23 @@
 		"body": "\\sum_{$1}^{$2} $3"
 	},
 
-	"fonc": {
-		"prefix": "fonction",
-		"body": "\\fonc{${1:name}}{${2:start}}{${3:end}}{${4:var}}{${5:result}}"
+	"func": {
+		"prefix": "function",
+		"body": "\\func{${1:name}}{${2:start}}{${3:end}}{${4:var}}{${5:result}}"
+	},
+
+	"po": {
+		"prefix": "po",
+		"body": "\\po{$1}{$2}$0"
+	},
+
+	"eq": {
+		"prefix": "eq",
+		"body": "\\eq{$1} $2"
+	},
+
+	"limit": {
+		"prefix": "limit",
+		"body": "\\lim_{$1} $2"
 	}
 }

@@ -117,7 +117,7 @@
             "comments": false,
             "strings": false
         },
-        "editor.wordWrap": "on",
+        "editor.wordWrap": "on"
     },
     "editor.fontFamily": "Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
