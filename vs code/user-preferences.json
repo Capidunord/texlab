@@ -1,36 +1,4 @@
 {
-    "latex-workshop.latex.autoBuild.onSave.enabled": false,
-    "latex-workshop.latex.clean.fileTypes": [
-        "*.aux",
-        "*.bbl",
-        "*.blg",
-        "*.idx",
-        "*.ind",
-        "*.lof",
-        "*.lot",
-        "*.out",
-        "*.toc",
-        "*.acn",
-        "*.acr",
-        "*.alg",
-        "*.glg",
-        "*.glo",
-        "*.gls",
-        "*.ist",
-        "*.fls",
-        "*.log",
-        "*.fdb_latexmk",
-        "*.bcf",
-        "*.ilg",
-        "*.log",
-        "*.run.xml",
-        "*.listing",
-        "*.pytxcode",
-        "*.synctex.gz",
-        "*.thm",
-        "*.xdv"
-    ],
-    "latex-workshop.view.pdf.viewer": "external",
     "latex-workshop.latex.tools": [
         {
             "name": "latexmk",
@@ -42,41 +10,6 @@
                 "-xelatex",
                 "%DOC%"
             ]
-        },
-        {
-            "name": "pdflatex",
-            "command": "pdflatex",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "bibtex",
-            "command": "bibtex",
-            "args": [
-                "%DOCFILE%"
-            ]
-        },
-        {
-            "name": "xelatex shell escape",
-            "command": "xelatex",
-            "args": [
-                "-synctex=1",
-                "-shell-escape",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "pythontex",
-            "command": "pythontex",
-            "args": [
-                "%DOC%"
-            ]
         }
     ],
     "latex-workshop.latex.recipes": [
@@ -85,61 +18,39 @@
             "tools": [
                 "latexmk"
             ]
-        },
-        {
-            "name": "pdflatex -> bibtex -> pdflatex*2",
-            "tools": [
-                "pdflatex",
-                "bibtex",
-                "pdflatex",
-                "pdflatex"
-            ]
-        },
-        {
-            "name": "xelatex -> pythontex -> xelatex",
-            "tools": [
-                "xelatex shell escape",
-                "pythontex",
-                "xelatex shell escape"
-            ]
-        },
-        {
-            "name": "xelatex shell escape",
-            "tools": [
-                "xelatex shell escape"
-            ]
         }
     ],
+    "latex-workshop.latex.autoBuild.onSave.enabled": false,
     "[latex]": {
+        "editor.wordWrap": "on",
         "editor.wordBasedSuggestions": false,
         "editor.quickSuggestions": {
             "other": false,
             "comments": false,
             "strings": false
-        },
-        "editor.wordWrap": "on"
+        }
     },
-    "editor.fontFamily": "Consolas, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "cSpell.language": ",fr,en",
-    "cSpell.userWords": [
-        "CQFD",
-        "Lorsqu'un",
-        "lorsqu'il",
-        "symétrisable"
-    ],
-    "window.titleBarStyle": "custom",
-    "editor.fontSize": 15,
+    "latex-workshop.view.pdf.viewer": "external",
+    "latex-workshop.bind.enter.key": false,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "csharp.referencesCodeLens.enabled": false,
+    "latex-workshop.view.pdf.external.command": {
+        "command": "SumatraPDF.exe",
+        "args": [
+            "%PDF%"
+        ]
+    },
     "latex-workshop.view.pdf.external.synctex": {
-        "command": "SumatraPDF",
+        "command": "SumatraPDF.exe",
         "args": [
             "-forward-search",
             "%TEX%",
             "%LINE%",
             "-reuse-instance",
             "-inverse-search",
-            "\"C:\\Users\\steph\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" -g \"%f:%l\"",
-            "%PDF%"
+            "\"C:\\Users\\steph\\AppData\\Local\\Programs\\Microsoft VS Code Insiders\\Code - Insiders.exe\" -g \"%f:%l\"",
+            "%PDF%",
         ]
-    }
+    },
+    "latex-workshop.hoverPreview.enabled": false,
 }
