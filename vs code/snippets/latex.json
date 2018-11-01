@@ -187,7 +187,7 @@
 	},
 
 	"integers interval": {
-		"prefix": "integers interval",
+		"prefix": "integers_interval",
 		"body": "\\itve{${1:left}}{${2:right}}{${3:left_value}}{${4:right_value}}"
 	},
 
@@ -241,7 +241,7 @@
 		"body": "\\begin{latexcode}\n\t$0\n\\end{latexcode}"
 	},
 
-	"latexcode side by side": {
+	"latexcode_side_by_side": {
 		"prefix": "latexcodesbs",
 		"body": "\\begin{latexcodesbs}\n\t$0\n\\end{latexcodesbs}"
 	},
@@ -269,7 +269,7 @@
 			"\\newcommand{\\templatesroot}{C:/texlab}",
 			"\\input{\\templatesroot/templates/article.tex}",
 			"\\input{\\templatesroot/imports/python/python}",
-			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/imports/python')\n\\end{pycode}\n",
+			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/python')\n\\end{pycode}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
 			"$0",
@@ -295,7 +295,7 @@
 			"\\newcommand{\\templatesroot}{C:/texlab}",
 			"\\input{\\templatesroot/templates/article_small.tex}",
 			"\\input{\\templatesroot/imports/python/python}",
-			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/imports/python')\n\\end{pycode}\n",
+			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/python')\n\\end{pycode}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
 			"$0",
@@ -321,7 +321,7 @@
 			"\\newcommand{\\templatesroot}{C:/texlab}",
 			"\\input{\\templatesroot/templates/book.tex}",
 			"\\input{\\templatesroot/imports/python/python}",
-			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/imports/python')\n\\end{pycode}\n",
+			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/python')\n\\end{pycode}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
 			"$0",
@@ -347,7 +347,7 @@
 			"\\newcommand{\\templatesroot}{C:/texlab}",
 			"\\input{\\templatesroot/templates/book_small.tex}",
 			"\\input{\\templatesroot/imports/python/python}",
-			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/imports/python')\n\\end{pycode}\n",
+			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/python')\n\\end{pycode}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
 			"$0",
@@ -373,7 +373,7 @@
 			"\\newcommand{\\templatesroot}{C:/texlab}",
 			"\\input{\\templatesroot/templates/report.tex}",
 			"\\input{\\templatesroot/imports/python/python}",
-			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/imports/python')\n\\end{pycode}\n",
+			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/python')\n\\end{pycode}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
 			"$0",
@@ -399,7 +399,7 @@
 			"\\newcommand{\\templatesroot}{C:/texlab}",
 			"\\input{\\templatesroot/templates/report_small.tex}",
 			"\\input{\\templatesroot/imports/python/python}",
-			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/imports/python')\n\\end{pycode}\n",
+			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/python')\n\\end{pycode}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
 			"$0",
