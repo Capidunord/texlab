@@ -1,0 +1,77 @@
+{
+    "added_words":
+    [
+        "symétrisable",
+        "Scilab"
+    ],
+    "always_show_minimap_viewport": true,
+    "auto_complete_commit_on_tab": true,
+    "auto_complete_triggers":
+    [
+        {
+            "characters": "<",
+            "selector": "text.html"
+        },
+        {
+            "characters": "\\",
+            "selector": "text.tex.latex"
+        }
+    ],
+    "bold_folder_labels": true,
+    "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+    "dictionary": "Packages/Dictionaries/French.dic",
+    "font_face": "Roboto Mono",
+    "font_options":
+    [
+        "directwrite"
+    ],
+    "font_size": 11,
+    "hot_exit": false,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "ignored_words":
+    [
+        "1cm",
+        "2cm",
+        "5cm",
+        "6cm",
+        "Associativite",
+        "Commutativite",
+        "Coordonnees",
+        "Distributivite",
+        "Element",
+        "Elément",
+        "Stabilite",
+        "activite",
+        "associativite",
+        "aumoins",
+        "auplus",
+        "colineaires",
+        "ev",
+        "generatrice",
+        "liee",
+        "lineaire",
+        "symetrisable",
+        "templates",
+        "texlab",
+        "textbf",
+        "uplet"
+    ],
+    "indent_guide_options":
+    [
+        "draw_normal",
+        "draw_active"
+    ],
+    "line_padding_bottom": 1,
+    "line_padding_top": 1,
+    "material_theme_bold_tab": true,
+    "material_theme_contrast_mode": true,
+    "material_theme_small_tab": true,
+    "material_theme_tabs_separator": true,
+    "overlay_scroll_bars": "enabled",
+    "remember_open_files": false,
+    "theme": "Material-Theme-Darker.sublime-theme",
+    "translate_tabs_to_spaces": true
+}
