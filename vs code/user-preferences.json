@@ -1,4 +1,12 @@
 {
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        }
+    ],
     "latex-workshop.latex.tools": [
         {
             "name": "latexmk",
@@ -12,17 +20,8 @@
             ]
         }
     ],
-    "latex-workshop.latex.recipes": [
-        {
-            "name": "latexmk",
-            "tools": [
-                "latexmk"
-            ]
-        }
-    ],
-    "latex-workshop.latex.autoBuild.onSave.enabled": false,
+    "latex-workshop.view.pdf.viewer": "external",
     "[latex]": {
-        "editor.wordWrap": "on",
         "editor.wordBasedSuggestions": false,
         "editor.quickSuggestions": {
             "other": false,
@@ -30,27 +29,27 @@
             "strings": false
         }
     },
-    "latex-workshop.view.pdf.viewer": "external",
-    "latex-workshop.bind.enter.key": false,
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-    "csharp.referencesCodeLens.enabled": false,
-    "latex-workshop.view.pdf.external.command": {
-        "command": "SumatraPDF.exe",
-        "args": [
-            "%PDF%"
-        ]
-    },
+    "cSpell.language": "en,fr-FR",
+    "cSpell.userWords": [
+        "diagonalisabilité",
+        "scilab"
+    ],
+    "workbench.colorTheme": "Material Theme High Contrast",
+    "editor.minimap.enabled": false,
+    "autoDocstring.docstringFormat": "sphinx",
+    "python.jediEnabled": false,
+    "git.enableSmartCommit": true,
+    "latex-workshop.view.autoFocus.enabled": false,
+    "latex-workshop.hover.preview.enabled": false,
+    "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.view.pdf.external.synctex": {
-        "command": "SumatraPDF.exe",
+        "command": "SumatraPDF",
         "args": [
             "-forward-search",
             "%TEX%",
             "%LINE%",
             "-reuse-instance",
-            "-inverse-search",
-            "\"C:\\Users\\steph\\AppData\\Local\\Programs\\Microsoft VS Code Insiders\\Code - Insiders.exe\" -g \"%f:%l\"",
             "%PDF%",
         ]
     },
-    "latex-workshop.hoverPreview.enabled": false,
 }
