@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[\pth{$SELECTION$1}$0]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>@pth</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>text.tex.latex string.other.math, text.tex.latex meta.environment.math</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Parenthesis</description>
+</snippet>

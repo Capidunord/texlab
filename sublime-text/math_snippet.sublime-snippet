@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+<snippet>
+    <content><![CDATA[$1]]$NOT_DEFINED></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>$2</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>text.tex.latex string.other.math, text.tex.latex meta.environment.math</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>$3</description>
+</snippet>
+    ]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>@math_snippet</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>text.xml</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Math snippet</description>
+</snippet>
