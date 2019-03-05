@@ -1,0 +1,1 @@
+Pour vs code : "C:\Users\steph\AppData\Local\Programs\Microsoft VS Code\Code.exe" -g "%f:%l"
