@@ -1,4 +1,9 @@
 {
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "window.zoomLevel": 0.2,
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
     "latex-workshop.latex.recipes": [
         {
             "name": "latexmk",
@@ -27,18 +32,14 @@
             "other": false,
             "comments": false,
             "strings": false
-        }
+        },
+        "editor.wordWrap": "on"
     },
     "cSpell.language": "en,fr-FR",
     "cSpell.userWords": [
         "diagonalisabilité",
         "scilab"
     ],
-    "workbench.colorTheme": "Material Theme High Contrast",
-    "editor.minimap.enabled": false,
-    "autoDocstring.docstringFormat": "sphinx",
-    "python.jediEnabled": false,
-    "git.enableSmartCommit": true,
     "latex-workshop.view.autoFocus.enabled": false,
     "latex-workshop.hover.preview.enabled": false,
     "latex-workshop.latex.autoBuild.run": "never",
@@ -52,4 +53,5 @@
             "%PDF%",
         ]
     },
+    "python.jediEnabled": false,
 }
