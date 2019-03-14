@@ -238,3 +238,10 @@ borderline west={1mm}{0pt}{proofcolor}}
 % \newtcbtheorem[use counter=subject]{subject}{Sujet}{remarkbox,subjectbox,breakable=true}{subjects}
 \newtcbtheorem[use counter=subject]{subject}{Sujet}{globalbox,subjectbox,breakable=true}{subjects}
 \newtcbtheorem[number within=subject]{subjectexercise}{Exercice}{globalbox,exercisebox,label type=exercise}{exercises}
+
+\newtcbox{\rating}{enhanced,nobeforeafter,tcbox raise base,boxrule=0.4pt,top=0mm,bottom=0mm,
+  right=0mm,left=4mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}},
+  colframe=orange!50!black,coltext=orange!25!black,colback=orange!10!white,
+  fontlower=\Large,fontupper=\scriptsize\bfseries,
+  overlay={\begin{tcbclipinterior}\fill[orange!75!red!50!white] (frame.south west)
+  rectangle node[text=white,font=\sffamily\bfseries\tiny,rotate=90] {PTS} ([xshift=4mm]frame.north west);\end{tcbclipinterior}}}
