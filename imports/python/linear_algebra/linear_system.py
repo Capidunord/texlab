@@ -1,4 +1,4 @@
-from sympy import latex
+from sympy import latex, Matrix, zeros
 from general import expr
 
 
@@ -9,7 +9,7 @@ class System:
         self.Y = Y
 
     def to_latex(self):
-        result = latex('\left\\{\\begin{array}{' +
+        result = latex('\\left\\{\\begin{array}{' +
                        'rc' * (self.A.cols - 1) + 'r' + 'cr' + '}\n')
         for i in range(0, self.A.rows):
             line_started = False
@@ -86,3 +86,34 @@ class System:
         temp = self.Y[row1 - 1, :]
         self.Y[row1 - 1, :] = self.Y[row2 - 1, :]
         self.Y[row2 - 1, :] = temp
+
+    @staticmethod
+    def _remove_line_from_matrix(M: Matrix, line: int) -> Matrix:
+        newM = zeros(M.rows - 1, M.cols)
+        for i in range(1, M.rows):
+            for j in range(1, M.cols + 1):
+                if i < line:
+                    newM[i-1,j-1] = M[i-1,j-1]
+                else:
+                    newM[i-1,j-1] = M[i, j-1]
+        return newM
+
+    def remove_line(self, line):
+        self.A = System._remove_line_from_matrix(self.A, line)
+        self.Y = System._remove_line_from_matrix(self.Y, line)
+
+    @staticmethod
+    def _remove_col_from_matrix(M: Matrix, col: int) -> Matrix:
+        newM = zeros(M.rows, M.cols - 1)
+        for i in range(1, M.rows + 1):
+            for j in range(1, M.cols):
+                if j < col:
+                    newM[i-1,j-1] = M[i-1,j-1]
+                else:
+                    newM[i-1,j-1] = M[i-1, j]
+        return newM
+
+    def remove_col(self, col):
+        self.A = System._remove_col_from_matrix(self.A, col)
+        self.X = System._remove_line_from_matrix(self.X, col)
+
