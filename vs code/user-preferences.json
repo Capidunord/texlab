@@ -29,9 +29,9 @@
     "[latex]": {
         "editor.wordBasedSuggestions": false,
         "editor.quickSuggestions": {
-            "other": false,
-            "comments": false,
-            "strings": false
+            "other": true,
+            "comments": true,
+            "strings": true
         },
         "editor.wordWrap": "on"
     },
@@ -54,4 +54,7 @@
         ]
     },
     "python.jediEnabled": false,
+    "latex-workshop.bind.enter.key": false,
+    "python.analysis.downloadChannel": "beta",
+    "omnisharp.path": "latest"
 }

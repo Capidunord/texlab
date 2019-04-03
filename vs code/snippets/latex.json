@@ -439,12 +439,12 @@
 
 	"int": {
 		"prefix": "integral",
-		"body": "\\int_{$1}^{$2} $0 \\dd $3"
+		"body": "\\int_{$1}^{$2} $4 \\dd $3 $0"
 	},
 
 	"sum": {
 		"prefix": "sum",
-		"body": "\\sum_{$1}^{$2} $3"
+		"body": "\\sum_{$1}^{$2} $3 $0"
 	},
 
 	"func": {
