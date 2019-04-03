@@ -1,0 +1,3 @@
+    - Dans la palette de commandes, ouvrir "Open extensions folder"
+    - Ouvrir le fichier "james-yu.latex-workshop-6.3.0\syntax\syntax.json"
+    - "wordPattern": "(__)|(\\*\\*)|(\\@.)|(\\.\\.\\.)|([$\\^\\`\\~\\!\\#\\%\\^\\&\\*\\(\\)\\-\\=\\+\\[\\{\\]\\}\\\\\\|\\;\\:\\'\\\"\\,\\.\\<\\>\\/\\?\\s\\@_]{2,})"
