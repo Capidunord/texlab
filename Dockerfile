@@ -1,10 +1,10 @@
-FROM archlinux/base
+FROM debian
 
-RUN pacman -Syu --noconfirm
-RUN pacman -Syu python python-pip git --noconfirm
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get install -y python git python-pygments
+RUN apt-get install -y texlive-full
+RUN apt-get install -y python-pip
 RUN pip install sympy
-RUN pacman -Syu texlive-most --noconfirm
-RUN pacman -Syu tar --noconfirm
 ADD . /texlab
 ADD latexmk/.latexmkrc /root/.latexmkrc
-RUN pacman -Syu python-pygments
