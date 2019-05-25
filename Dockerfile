@@ -1,8 +1,10 @@
-FROM alpine
+FROM archlinux/base
 
-RUN apk add git python bash py-pip
-RUN pip install --upgrade pip
-RUN pip install sympy pygments
-RUN apk add texlive-full
-ADD . texlab
-ADD latexmk/.latexmkrc-docker /root/.latexmkrc
+RUN pacman -Syu --noconfirm
+RUN pacman -Syu python python-pip git --noconfirm
+RUN pip install sympy
+RUN pacman -Syu texlive-most --noconfirm
+RUN pacman -Syu tar --noconfirm
+ADD . /texlab
+ADD latexmk/.latexmkrc /root/.latexmkrc
+RUN pacman -Syu python-pygments
