@@ -465,5 +465,20 @@
 	"limit": {
 		"prefix": "limit",
 		"body": "\\lim_{$1} $2"
+	},
+
+	"pgcd": {
+		"prefix": "pgcd",
+		"body": "$1 \\wedge $2"
+	},
+
+	"ppcm": {
+		"prefix": "ppcm",
+		"body": "$1 \\vee $2"
+	},
+
+	"divide": {
+		"prefix": "divide",
+		"body": "\\divide{$1}{$2} $0"
 	}
 }
