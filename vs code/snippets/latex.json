@@ -469,12 +469,12 @@
 
 	"pgcd": {
 		"prefix": "pgcd",
-		"body": "$1 \\wedge $2"
+		"body": "\\pgcd{$1}{$2} $0"
 	},
 
 	"ppcm": {
 		"prefix": "ppcm",
-		"body": "$1 \\vee $2"
+		"body": "\\ppcm{$1}{$2} $0"
 	},
 
 	"divide": {
