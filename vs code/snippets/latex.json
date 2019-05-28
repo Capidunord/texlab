@@ -479,6 +479,6 @@
 
 	"divide": {
 		"prefix": "divide",
-		"body": "\\divide{$1}{$2} $0"
+		"body": "\\idivide{$1}{$2} $0"
 	}
 }
