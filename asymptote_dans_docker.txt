@@ -1,0 +1,5 @@
+(avec un serveur X qui tourne (vcxsrv sous windows))
+
+Lancer le conteneur docker avec l'option "-e DISPLAY=ip_du_pc:0.0"
+
+asy -glOptions=-indirect -noV -noprc chose.asy
