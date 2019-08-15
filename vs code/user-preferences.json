@@ -1,9 +1,4 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
-    "window.zoomLevel": 0.2,
-    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
-    "editor.fontLigatures": true,
     "latex-workshop.latex.recipes": [
         {
             "name": "latexmk",
@@ -53,8 +48,8 @@
             "%PDF%",
         ]
     },
-    "python.jediEnabled": false,
     "latex-workshop.bind.enter.key": false,
-    "python.analysis.downloadChannel": "beta",
-    "omnisharp.path": "latest"
+    "latex-workshop.docker.image.latex": "fanoutex",
+    "latex-workshop.docker.enabled": true,
+    "latex-workshop.latexindent.args": ["%DOC%"]
 }

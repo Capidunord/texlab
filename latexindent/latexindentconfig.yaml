@@ -1,4 +1,5 @@
 defaultIndent: "    "
+onlyOneBackUp: 1
 noAdditionalIndent:
     item: 1
 lookForAlignDelims:
