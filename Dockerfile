@@ -2,9 +2,8 @@ FROM debian
 
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN apt-get install -y python git python-pygments
 RUN apt-get install -y texlive-full
-RUN apt-get install -y python-pip
-RUN pip install sympy
+RUN apt-get install -y git python3 python3-pip
+RUN python3 -m pip install sympy pygments
 ADD . /texlab
-ADD latexmk/.latexmkrc /root/.latexmkrc
+ADD latexmk/.latexmkrc-docker /root/.latexmkrc
