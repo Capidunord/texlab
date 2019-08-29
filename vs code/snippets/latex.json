@@ -254,7 +254,7 @@
 	"new xelatex article": {
 		"prefix": "new_xelatex_article",
 		"body": [
-			"\\newcommand{\\templatesroot}{C:/texlab}",
+			"\\newcommand{\\templatesroot}{/texlab}",
 			"\\input{\\templatesroot/templates/article.tex}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
@@ -266,10 +266,10 @@
 	"new xelatex article with python": {
 		"prefix": "new_xelatex_article",
 		"body": [
-			"\\newcommand{\\templatesroot}{C:/texlab}",
+			"\\newcommand{\\templatesroot}{/texlab}",
 			"\\input{\\templatesroot/templates/article.tex}",
 			"\\input{\\templatesroot/imports/python/python}",
-			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/python')\n\\end{pycode}\n",
+			"\\begin{pycode}\nimport sys\nsys.path.insert(0, '/texlab/imports/python')\n\\end{pycode}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
 			"$0",
@@ -280,7 +280,7 @@
 	"new xelatex small_article": {
 		"prefix": "new_xelatex_small_article",
 		"body": [
-			"\\newcommand{\\templatesroot}{C:/texlab}",
+			"\\newcommand{\\templatesroot}{/texlab}",
 			"\\input{\\templatesroot/templates/article_small.tex}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
@@ -292,10 +292,10 @@
 	"new xelatex small article with python": {
 		"prefix": "new_xelatex_small_article",
 		"body": [
-			"\\newcommand{\\templatesroot}{C:/texlab}",
+			"\\newcommand{\\templatesroot}{/texlab}",
 			"\\input{\\templatesroot/templates/article_small.tex}",
 			"\\input{\\templatesroot/imports/python/python}",
-			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/python')\n\\end{pycode}\n",
+			"\\begin{pycode}\nimport sys\nsys.path.insert(0, '/texlab/imports/python')\n\\end{pycode}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
 			"$0",
@@ -306,7 +306,7 @@
 	"new xelatex book": {
 		"prefix": "new_xelatex_book",
 		"body": [
-			"\\newcommand{\\templatesroot}{C:/texlab}",
+			"\\newcommand{\\templatesroot}{/texlab}",
 			"\\input{\\templatesroot/templates/book.tex}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
@@ -318,10 +318,10 @@
 	"new xelatex book with python": {
 		"prefix": "new_xelatex_book",
 		"body": [
-			"\\newcommand{\\templatesroot}{C:/texlab}",
+			"\\newcommand{\\templatesroot}{/texlab}",
 			"\\input{\\templatesroot/templates/book.tex}",
 			"\\input{\\templatesroot/imports/python/python}",
-			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/python')\n\\end{pycode}\n",
+			"\\begin{pycode}\nimport sys\nsys.path.insert(0, '/texlab/imports/python')\n\\end{pycode}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
 			"$0",
@@ -332,7 +332,7 @@
 	"new xelatex small_book": {
 		"prefix": "new_xelatex_small_book",
 		"body": [
-			"\\newcommand{\\templatesroot}{C:/texlab}",
+			"\\newcommand{\\templatesroot}{/texlab}",
 			"\\input{\\templatesroot/templates/book_small.tex}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
@@ -344,10 +344,10 @@
 	"new xelatex small book with python": {
 		"prefix": "new_xelatex_small_book",
 		"body": [
-			"\\newcommand{\\templatesroot}{C:/texlab}",
+			"\\newcommand{\\templatesroot}{/texlab}",
 			"\\input{\\templatesroot/templates/book_small.tex}",
 			"\\input{\\templatesroot/imports/python/python}",
-			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/python')\n\\end{pycode}\n",
+			"\\begin{pycode}\nimport sys\nsys.path.insert(0, '/texlab/imports/python')\n\\end{pycode}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
 			"$0",
@@ -358,7 +358,7 @@
 	"new xelatex report": {
 		"prefix": "new_xelatex_report",
 		"body": [
-			"\\newcommand{\\templatesroot}{C:/texlab}",
+			"\\newcommand{\\templatesroot}{/texlab}",
 			"\\input{\\templatesroot/templates/report.tex}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
@@ -370,10 +370,10 @@
 	"new xelatex report with python": {
 		"prefix": "new_xelatex_report",
 		"body": [
-			"\\newcommand{\\templatesroot}{C:/texlab}",
+			"\\newcommand{\\templatesroot}{/texlab}",
 			"\\input{\\templatesroot/templates/report.tex}",
 			"\\input{\\templatesroot/imports/python/python}",
-			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/python')\n\\end{pycode}\n",
+			"\\begin{pycode}\nimport sys\nsys.path.insert(0, '/texlab/imports/python')\n\\end{pycode}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
 			"$0",
@@ -384,7 +384,7 @@
 	"new xelatex small report": {
 		"prefix": "new_xelatex_small_report",
 		"body": [
-			"\\newcommand{\\templatesroot}{C:/texlab}",
+			"\\newcommand{\\templatesroot}{/texlab}",
 			"\\input{\\templatesroot/templates/report_small.tex}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
@@ -396,10 +396,10 @@
 	"new xelatex small report with python": {
 		"prefix": "new_xelatex_small_report",
 		"body": [
-			"\\newcommand{\\templatesroot}{C:/texlab}",
+			"\\newcommand{\\templatesroot}{/texlab}",
 			"\\input{\\templatesroot/templates/report_small.tex}",
 			"\\input{\\templatesroot/imports/python/python}",
-			"\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/python')\n\\end{pycode}\n",
+			"\\begin{pycode}\nimport sys\nsys.path.insert(0, '/texlab/imports/python')\n\\end{pycode}\n",
 			"\\title{$1}\n\\author{$2}\n\\date{${3:\\today}}\n",
 			"\\begin{document}\n",
 			"$0",
