@@ -11,6 +11,7 @@
 \definecolor{methodcolor}{RGB}{105,188,155}
 \definecolor{commentcolor}{RGB}{244,113,66}
 \definecolor{subjectcolor}{RGB}{244,116,65}
+\definecolor{testexercisecolor}{RGB}{200,200,200}
 
 \newcounter{dummy}
 
@@ -94,6 +95,19 @@
 
 \newtcbtheorem[use counter=dummy, number within=section]{example}{Exemple}{globalbox,exercisebox,label type=example, leftrule=0pt, rightrule=0pt}{examples}
 \crefname{example}{Exemple}{Exemples}
+
+% Exercices de DS
+\tcbset{
+    testexercisebox/.style={
+            colframe=testexercisecolor,
+            colback=white,
+            coltitle=testexercisecolor!20!black,
+            title style={testexercisecolor!50},
+        }
+}
+
+\newtcbtheorem{testexercise}{Exercice}{globalbox,testexercisebox,label type=testexercise}{testexercises}
+\crefname{testexercise}{Exercice}{Exercices}
 
 % Correction d'exercice
 % \theoremheaderfont{\sc}\theorembodyfont{\upshape}

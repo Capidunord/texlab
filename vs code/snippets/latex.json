@@ -58,6 +58,11 @@
 		"body": "\\begin{exercise}{$1}{$2}\n\t$0\n\\end{exercise}"
 	},
 
+	"testexercise": {
+		"prefix": "testexercise",
+		"body": "\\begin{testexercise}{$1}{$2}\n\t$0\n\\end{testexercise}"
+	},
+
 	"correction": {
 		"prefix": "correction",
 		"body": "\\begin{correction}\n\t$0\n\\end{correction}"
