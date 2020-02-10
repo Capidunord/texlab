@@ -45,7 +45,7 @@
             "%TEX%",
             "%LINE%",
             "-reuse-instance",
-            "%PDF%",
+            "%PDF%"
         ]
     },
     "latex-workshop.bind.enter.key": false,
