@@ -1,0 +1,10 @@
+(avec un serveur X qui tourne (vcxsrv sous windows, décocher "Use native opengl")
+
+Insérer :
+settings.outformat="pdf";
+settings.render=16;
+
+dans le fichier .asy,
+
+puis :
+asy -V bidule.asy
