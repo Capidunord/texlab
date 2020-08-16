@@ -12,6 +12,10 @@
 \definecolor{commentcolor}{RGB}{244,113,66}
 \definecolor{subjectcolor}{RGB}{244,116,65}
 \definecolor{testexercisecolor}{RGB}{200,200,200}
+\definecolor{todolv1color}{RGB}{0,204,0}
+\definecolor{todolv2color}{RGB}{255,204,0}
+\definecolor{todolv3color}{RGB}{255,153,153}
+\definecolor{bigtodocolor}{RGB}{180,180,180}
 
 \newcounter{dummy}
 
@@ -194,6 +198,99 @@ borderline west={1mm}{0pt}{exercisecolor}}
 
 \newtcolorbox{note}[1][Commentaire]{remarkbox,commentbox,title=#1}
 
+% Todos
+\tcbset{
+    todobox/.style={
+        %     breakable,
+        %     enhanced,
+            arc=0pt,
+            outer arc=0pt,
+            fonttitle=\bfseries,
+        %     boxrule=1pt,
+        %     width=(\linewidth - 4pt)/3,
+                width=0.33\linewidth,
+            equal height group=AT,
+            before=,
+            after=\hfill,
+        %     boxed title style={
+        %             enhanced,
+        %             skin=enhancedfirst jigsaw,
+        %             arc=0pt,
+        %             bottom=0pt,
+        %         }
+        }
+}
+
+\tcbset{
+    bigtodobox/.style={
+                enhanced,
+                arc=0pt,
+                outer arc=0pt,
+                fonttitle=\bfseries,
+            colback=white,
+                % interior hidden,
+            colframe=bigtodocolor,
+            colbacktitle=bigtodocolor,
+            left=0mm,
+            right=0mm,
+            top=0mm,
+            bottom=0mm,
+            leftrule=0pt,
+            bottomrule=0.8pt,
+            toprule=0.8pt,
+            rightrule=0pt,
+            attach boxed title to top right={},
+            boxed title style={
+                    enhanced,
+                    skin=enhancedfirst jigsaw,
+                    arc=0pt,
+                    bottom=0pt,
+                    interior style={fill=bigtodocolor}
+                }
+        }
+}
+
+\newtcolorbox{bigtodo}[1][A faire]{bigtodobox,title=#1}
+
+\tcbset{
+    todolv1box/.style={
+            colback=todolv1color!5,
+            colframe=todolv1color,
+            colbacktitle=todolv1color,
+            boxed title style={
+                    interior style={fill=todolv1color}
+                }
+        }
+}
+
+\newtcolorbox{todolv1}[1][Niveau 1]{todobox,todolv1box,title=#1}
+
+\tcbset{
+    todolv2box/.style={
+            colback=todolv2color!5,
+            colframe=todolv2color,
+            colbacktitle=todolv2color,
+            boxed title style={
+                    interior style={fill=todolv2color}
+                }
+        }
+}
+
+\newtcolorbox{todolv2}[1][Niveau 2]{todobox,todolv2box,title=#1}
+
+\tcbset{
+    todolv3box/.style={
+            colback=todolv3color!5,
+            colframe=todolv3color,
+            colbacktitle=todolv3color,
+            boxed title style={
+                    interior style={fill=todolv3color}
+                }
+        }
+}
+
+\newtcolorbox{todolv3}[1][Niveau 3]{todobox,todolv3box,title=#1}
+
 % Démonstrations
 % \theoremheaderfont{\sc}\theorembodyfont{\upshape}
 % \theoremstyle{nonumberbreak}
@@ -259,3 +356,12 @@ borderline west={1mm}{0pt}{proofcolor}}
   fontlower=\Large,fontupper=\scriptsize\bfseries,
   overlay={\begin{tcbclipinterior}\fill[orange!75!red!50!white] (frame.south west)
   rectangle node[text=white,font=\sffamily\bfseries\tiny,rotate=90] {PTS} ([xshift=4mm]frame.north west);\end{tcbclipinterior}}}
+
+\newenvironment{todo}{
+        \begin{bigtodo}
+        \newcommand{\nextlevel}{\end{todolv1}\begin{todolv2}\renewcommand{\nextlevel}{\end{todolv2}\begin{todolv3}}}
+        \begin{todolv1}
+}{
+        \end{todolv3}
+        \end{bigtodo}
+}
