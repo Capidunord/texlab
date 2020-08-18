@@ -1,4 +1,8 @@
 {
+	"mat_delim": {
+		"body": "mat_delim=\"(\"",
+		"prefix": "mat_delim"
+	},
 	"todos": {
 		"body": "\\begin{todo}\n\t$1\n\t\\nextlevel\n\t$2\n\t\\nextlevel\n\t$0\n\\end{todo}",
 		"prefix": "todo"
