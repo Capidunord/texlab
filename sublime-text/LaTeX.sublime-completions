@@ -25,5 +25,7 @@
         { "trigger": "proof\tproof with title", "contents": "\\begin{proof}[$1]\n\t$0\n\\end{proof}"},
         { "trigger": "theorem\ttheorem", "contents": "\\begin{theorem}{$1}{$2}\n\t$0\n\\end{theorem}"},
         { "trigger": "corollary", "contents": "\\begin{corollary}{$1}{$2}\n\t$0\n\\end{corollary}"},
+        { "trigger": "test_exercise\ttest exercise", "contents": "\\begin{testexercise}{$1}{$2}\n\t$0\n\\end{testexercise}"},
+        { "trigger": "todo\ttodo", "contents": "\\begin{todo}\n\t$1\n\t\\nextlevel\n\t$2\n\t\\nextlevel\n\t$3\n\\end{todo}$0"},
     ]
 }
