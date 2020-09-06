@@ -5,6 +5,7 @@
     [
         // templates
         { "trigger": "new article", "contents": "% !TEX program = xelatex\n\n\\newcommand{\\templatesroot}{C:/texlab}\n\\input{\\templatesroot/templates/article.tex}\n\n\\title{}\n\\author{}\n\\date{}\n\n\\begin{document}\n$0\n\\end{document}"},
+        { "trigger": "new article with python", "contents": "% !TEX program = xelatex\n\n\\newcommand{\\templatesroot}{C:/texlab}\n\\input{\\templatesroot/templates/article.tex}\n\n\\input{\\templatesroot/imports/python/python}\n\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/imports/python')\nfrom sympy import *\nfrom linear_algebra.linear_system import System\n\\end{pycode}\n\n\\title{}\n\\author{}\n\\date{}\n\n\\begin{document}\n$0\n\\end{document}"},
 
         // environments
         { "trigger": "align*", "contents": "\\begin{align*}\n\t$0\n\\end{align*}"},
