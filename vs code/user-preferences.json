@@ -1,55 +1,14 @@
 {
-    "latex-workshop.latex.recipes": [
-        {
-            "name": "latexmk",
-            "tools": [
-                "latexmk"
-            ]
-        }
-    ],
-    "latex-workshop.latex.tools": [
-        {
-            "name": "latexmk",
-            "command": "latexmk",
-            "args": [
-                // "-synctex=1",
-                // "-interaction=nonstopmode",
-                // "-file-line-error",
-                // "-lualatex",
-                "%DOC%"
-            ]
-        }
-    ],
-    "latex-workshop.view.pdf.viewer": "external",
-    "[latex]": {
-        "editor.wordBasedSuggestions": false,
-        "editor.quickSuggestions": {
-            "other": true,
-            "comments": true,
-            "strings": true
-        },
-        "editor.wordWrap": "on"
-    },
-    "cSpell.language": "en,fr-FR",
-    "cSpell.userWords": [
-        "diagonalisabilité",
-        "scilab"
-    ],
-    "latex-workshop.view.autoFocus.enabled": false,
-    "latex-workshop.hover.preview.enabled": false,
     "latex-workshop.latex.autoBuild.run": "never",
-    "latex-workshop.view.pdf.external.synctex": {
-        "command": "SumatraPDF",
-        "args": [
-            "-forward-search",
-            "%TEX%",
-            "%LINE%",
-            "-reuse-instance",
-            "%PDF%"
-        ]
-    },
-    "latex-workshop.bind.enter.key": false,
-    "latex-workshop.docker.image.latex": "fanoutex",
-    "latex-workshop.docker.enabled": true,
-    "latex-workshop.latexindent.args": ["%DOC%"]
+    "latex-workshop.view.pdf.viewer": "external",
+    "latex-workshop.view.pdf.external.synctex.command": "C:\\Users\\steph\\AppData\\Local\\SumatraPDF\\SumatraPDF.exe",
+    "latex-workshop.view.pdf.external.synctex.args": [
+        "-forward-search",
+        "%TEX%",
+        "%LINE%",
+        "-reuse-instance",
+        "-inverse-search",
+        "\"C:\\Users\\steph\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"C:\\Users\\steph\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\cli.js\" -r -g \"%f:%l\"",
+        "%PDF%",
+    ],
 }
