@@ -9,8 +9,8 @@ class System:
         self.Y = Y
 
     def to_latex(self):
-        result = latex('\\left\\{\\begin{array}{' +
-                       'rc' * (self.A.cols - 1) + 'r' + 'cr' + '}\n')
+        result = '\left\{\\begin{array}{' + \
+                       'rc' * (self.A.cols - 1) + 'r' + 'cr' + '}\n'
         for i in range(0, self.A.rows):
             line_started = False
             line = ""
@@ -20,7 +20,7 @@ class System:
                         pass
                     else:
                         if self.A[i, j] == -1:
-                            line += latex(' - ') + expr.platex(self.X[j, 0])
+                            line += ' - ' + expr.platex(self.X[j, 0])
                         elif self.A[i, j] == 1:
                             line += expr.platex(self.X[j, 0])
                         else:
@@ -36,9 +36,9 @@ class System:
                     else:
                         if not expr.leading_minus(self.A[i, j]) > 0:
                             if line_started:
-                                line += latex(" + & ")
+                                line += " + & "
                             else:
-                                line += latex(" & ")
+                                line += " & "
                             if self.A[i, j] == 1:
                                 line += expr.platex(self.X[j, 0])
                             else:
@@ -54,21 +54,21 @@ class System:
                                     line += expr.platex(-self.A[i, j]) + \
                                         " " + expr.platex(self.X[j, 0])
                             else:
-                                line += latex(" & ")
+                                line += " & "
                                 if self.A[i, j] == -1:
-                                    line += latex(" - ") + \
+                                    line += " - " + \
                                         expr.platex(self.X[j, 0])
                                 else:
                                     line += expr.platex(self.A[i, j]) + \
                                         " " + expr.platex(self.X[j, 0])
                             line_started = True
                     line += " & "
-            line += latex(" = & ") + expr.platex(self.Y[i, 0])
+            line += " = & " + expr.platex(self.Y[i, 0])
             if i != self.A.rows - 1:
-                line += latex(' \\\\')
+                line += ' \\\\'
             line += "\n"
             result += line
-        result += latex("\\end{array}\\right.")
+        result += "\end{array}\\right."
         return result
 
     def transvection(self, row1, row2, factor=1):
