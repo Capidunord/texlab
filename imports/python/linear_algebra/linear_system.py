@@ -47,7 +47,7 @@ class System:
                             line_started = True
                         else:
                             if line_started:
-                                line += expr.platex(" - & ")
+                                line += " - & "
                                 if self.A[i, j] == -1:
                                     line += expr.platex(self.X[j, 0])
                                 else:
