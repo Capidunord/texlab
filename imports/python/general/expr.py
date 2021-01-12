@@ -23,5 +23,5 @@ def leading_minus(expr):
 def platex(expr):
     result = latex(expr)
     if needs_parenthesis(expr):
-        result = latex('\\left(') + result + latex('\\right)')
+        result = '\\left(' + result + '\\right)'
     return result
