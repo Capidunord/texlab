@@ -1,5 +1,6 @@
 from sympy import latex, Matrix, zeros
 from general import expr
+from .render_row import render_row
 
 
 class System:
@@ -12,58 +13,9 @@ class System:
         result = '\left\{\\begin{array}{' + \
                        'rc' * (self.A.cols - 1) + 'r' + 'cr' + '}\n'
         for i in range(0, self.A.rows):
-            line_started = False
-            line = ""
-            for j in range(0, self.A.cols):
-                if j == 0:
-                    if self.A[i, j] == 0:
-                        pass
-                    else:
-                        if self.A[i, j] == -1:
-                            line += ' - ' + expr.platex(self.X[j, 0])
-                        elif self.A[i, j] == 1:
-                            line += expr.platex(self.X[j, 0])
-                        else:
-                            line += expr.platex(self.A[i, j]) + \
-                                " " + expr.platex(self.X[j, 0])
-                        line_started = True
-                    line += " & "
-                else:
-                    if self.A[i, j] == 0:
-                        line += " & "
-                        if not line_started and j == self.A.cols - 1:
-                            line += " 0 "
-                    else:
-                        if not expr.leading_minus(self.A[i, j]) > 0:
-                            if line_started:
-                                line += " + & "
-                            else:
-                                line += " & "
-                            if self.A[i, j] == 1:
-                                line += expr.platex(self.X[j, 0])
-                            else:
-                                line += expr.platex(self.A[i, j]) + \
-                                    " " + expr.platex(self.X[j, 0])
-                            line_started = True
-                        else:
-                            if line_started:
-                                line += " - & "
-                                if self.A[i, j] == -1:
-                                    line += expr.platex(self.X[j, 0])
-                                else:
-                                    line += expr.platex(-self.A[i, j]) + \
-                                        " " + expr.platex(self.X[j, 0])
-                            else:
-                                line += " & "
-                                if self.A[i, j] == -1:
-                                    line += " - " + \
-                                        expr.platex(self.X[j, 0])
-                                else:
-                                    line += expr.platex(self.A[i, j]) + \
-                                        " " + expr.platex(self.X[j, 0])
-                            line_started = True
-                    line += " & "
-            line += " = & " + expr.platex(self.Y[i, 0])
+            row = [self.A[i, j] for j in range(0, self.A.cols)]
+            line = render_row(row, self.X)
+            line += " & = & " + expr.platex(self.Y[i, 0])
             if i != self.A.rows - 1:
                 line += ' \\\\'
             line += "\n"

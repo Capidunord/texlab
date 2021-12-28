@@ -40,3 +40,35 @@ syst = System(A,X,Y)
                 \py{syst.to_latex()}
         \end{align*}
     \end{latexcode}
+
+    \begin{latexcode}
+\begin{pycode}
+from sympy import Matrix, S
+from linear_algebra.gauss_inversion import GaussInversion, ActionMode
+
+A = Matrix([[1, 1], [1, -2]])
+g = GaussInversion(A)
+\end{pycode}
+        $$\begin{array}{c|c|c}
+            \py{latex(g.A, mat_delim="(")} & & \py{latex(g.B, mat_delim="(")} \\
+            \pyc{g.transvection(2, 1, -1)}\py{latex(g.A, mat_delim="(")} & \pth{C_{2}\leftarrow C_{2} - C_{1}} & \py{latex(g.B, mat_delim="(")} \\
+            \pyc{g.multiply(2, -S(1)/3)}\py{latex(g.A, mat_delim="(")} & \pth{C_{2}\leftarrow \frac{-1}{3}C_{2}} & \py{latex(g.B, mat_delim="(")} \\
+            \pyc{g.transvection(1, 2, -1)}\py{latex(g.A, mat_delim="(")} & \pth{C_{1}\leftarrow C_{1} - C_{2}} & \py{latex(g.B, mat_delim="(")}
+        \end{array}$$
+    \end{latexcode}
+
+    \begin{latexcode}
+\begin{pycode}
+from sympy import Matrix, S
+from linear_algebra.gauss_inversion import GaussInversion, ActionMode
+
+A = Matrix([[1, 1], [1, -2]])
+g = GaussInversion(A)
+\end{pycode}
+        $$\py{g.to_latex()}$$
+
+        $$\pyc{g.transvection(1, 2, -1)}\py{g.to_latex()}$$
+        $$\pyc{g.switch(1, 2)}\py{g.to_latex()}$$
+        $$\pyc{g.multiply(2, S(1)/3)}\py{g.to_latex()}$$
+        $$\pyc{g.transvection(1, 2, S(2))}\py{g.to_latex()}$$
+    \end{latexcode}
