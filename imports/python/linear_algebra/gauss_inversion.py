@@ -89,7 +89,7 @@ class GaussInversion:
                 self.B[i-1, k] = self.B[j - 1, k]
                 self.B[j - 1, k] = temp
         elif self.action_mode == ActionMode.COLUMNS:
-            for k in range(0, self.A.row):
+            for k in range(0, self.A.rows):
                 temp = self.A[k, i-1]
                 self.A[k, i-1] = self.A[k, j - 1]
                 self.A[k, j - 1] = temp
