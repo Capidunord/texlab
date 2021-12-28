@@ -21,8 +21,8 @@ class GaussInversion:
         X: Optional[Matrix] = None,
         Y: Optional[Matrix] = None,
     ) -> None:
-        self.A = A
-        self.B = B if B else eye(self.A.rows)
+        self.A = A.copy()
+        self.B = B.copy() if B else eye(self.A.rows)
 
         def generate_symbols(prefix, size):
             result = []
@@ -30,8 +30,8 @@ class GaussInversion:
                 result.append(symbols(prefix + "_" + str(k)))
             return Matrix(size, 1, result)
 
-        self.X = X if X else generate_symbols("x", A.rows)
-        self.Y = Y if Y else generate_symbols("y", A.rows)
+        self.X = X.copy() if X else generate_symbols("x", A.rows)
+        self.Y = Y.copy() if Y else generate_symbols("y", A.rows)
         self.action_mode = action_mode
 
     def to_latex(self) -> str:

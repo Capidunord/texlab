@@ -5,9 +5,9 @@ from .render_row import render_row
 
 class System:
     def __init__(self, A, X, Y):
-        self.A = A
-        self.X = X
-        self.Y = Y
+        self.A = A.copy()
+        self.X = X.copy()
+        self.Y = Y.copy()
 
     def to_latex(self):
         result = '\left\{\\begin{array}{' + \
