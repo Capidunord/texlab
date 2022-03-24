@@ -498,5 +498,10 @@
 	"angle": {
 		"prefix": "angle",
 		"body": "\\ang{$1}{$2} $0"
+	},
+
+	"congru": {
+		"prefix": "congru",
+		"body": "\\congru{$1}{$2}{$3} $0"
 	}
 }
