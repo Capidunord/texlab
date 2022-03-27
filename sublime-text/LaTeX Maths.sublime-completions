@@ -39,6 +39,7 @@
         { "trigger": "subscript\tsubscript", "contents": "_{$1}$0"},
 
         // Comparisons
-        { "trigger": "po\to", "contents": "\\po{$1}{$2}$0"}
+        { "trigger": "po\to", "contents": "\\po{$1}{$2}$0"},
+        { "trigger": "cong\tcongrus", "contents": "\\cong{$1}{$2}{$3}$0"}
     ]
 }
