@@ -450,6 +450,11 @@
 		"body": "\\setK"
 	},
 
+	"set C": {
+		"prefix": "setC",
+		"body": "\\setC"
+	},
+
 	"int": {
 		"prefix": "integral",
 		"body": "\\int_{$1}^{$2} $4 \\dd $3 $0"
