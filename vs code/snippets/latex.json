@@ -508,5 +508,10 @@
 	"congru": {
 		"prefix": "congru",
 		"body": "\\congru{$1}{$2}{$3} $0"
+	},
+
+	"guillements": {
+		"prefix": "guillements",
+		"body": "\\guillemets{$1} $ 0"
 	}
 }
