@@ -512,6 +512,6 @@
 
 	"guillements": {
 		"prefix": "guillements",
-		"body": "\\guillemets{$1} $ 0"
+		"body": "\\guillemets{$1} $0"
 	}
 }
