@@ -513,5 +513,10 @@
 	"guillements": {
 		"prefix": "guillements",
 		"body": "\\guillemets{$1} $0"
+	},
+
+	"restricts": {
+		"prefix": "restricts",
+		"body": "\\restricts{$1}{$2} $0"
 	}
 }
