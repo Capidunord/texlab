@@ -518,5 +518,10 @@
 	"restricts": {
 		"prefix": "restricts",
 		"body": "\\restricts{$1}{$2} $0"
+	},
+
+	"mintinline": {
+		"prefix": "mintinline",
+		"body": "\\mintinline{#1}{#2}#0"
 	}
 }
