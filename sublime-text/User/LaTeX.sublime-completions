@@ -1,0 +1,33 @@
+{
+    "scope": "text.tex.latex - (string.other.math, meta.environment.math)",
+
+    "completions":
+    [
+        // templates
+        { "trigger": "new article", "contents": "% !TEX program = xelatex\n\n\\newcommand{\\templatesroot}{C:/texlab}\n\\input{\\templatesroot/templates/article.tex}\n\n\\title{}\n\\author{}\n\\date{}\n\n\\begin{document}\n$0\n\\end{document}"},
+        { "trigger": "new article with python", "contents": "% !TEX program = xelatex\n\n\\newcommand{\\templatesroot}{C:/texlab}\n\\input{\\templatesroot/templates/article.tex}\n\n\\input{\\templatesroot/imports/python/python}\n\\begin{pycode}\nimport sys\nsys.path.insert(0, 'C:/texlab/imports/python')\nfrom sympy import *\nfrom linear_algebra.linear_system import System\n\\end{pycode}\n\n\\title{}\n\\author{}\n\\date{}\n\n\\begin{document}\n$0\n\\end{document}"},
+
+        // environments
+        { "trigger": "align*", "contents": "\\begin{align*}\n\t$0\n\\end{align*}"},
+        { "trigger": "remark\t remark", "contents": "\\begin{remark}{$1}{$2}\n\t$0\n\\end{remark}"},
+        { "trigger": "note\tnote", "contents": "\\begin{note}\n\t$0\n\\end{note}"},
+        { "trigger": "note\tnote with title", "contents": "\\begin{note}[$1]\n\t$0\n\\end{note}"},
+        { "trigger": "correction\t correction", "contents": "\\begin{correction}\n\t$0\n\\end{correction}"},
+        { "trigger": "correction\t correction with title", "contents": "\\begin{correction}[$1]\n\t$0\n\\end{correction}"},
+        { "trigger": "code\tcode", "contents": "\\begin{code}{$1}\n\t$0\n\\end{code}"},
+        { "trigger": "subject\tsubject", "contents": "\\begin{subject}{$1}{$2}\n\t$0\n\\end{subject}"},
+        { "trigger": "subject_exercise\tsubject exercise", "contents": "\\begin{subjectexercise}{$1}{$2}\n\t$0\n\\end{subjectexercise}"},
+        { "trigger": "exercise\texercise", "contents": "\\begin{exercise}{$1}{$2}\n\t$0\n\\end{exercise}"},
+        { "trigger": "example\texample", "contents": "\\begin{example}{$1}{$2}\n\t$0\n\\end{example}"},
+        { "trigger": "definition\tdefinition", "contents": "\\begin{definition}{$1}{$2}\n\t$0\n\\end{definition}"},
+        { "trigger": "property\tproperty", "contents": "\\begin{property}{$1}{$2}\n\t$0\n\\end{property}"},
+        { "trigger": "proof\tproof", "contents": "\\begin{proof}\n\t$0\n\\end{proof}"},
+        { "trigger": "proof\tproof with title", "contents": "\\begin{proof}[$1]\n\t$0\n\\end{proof}"},
+        { "trigger": "theorem\ttheorem", "contents": "\\begin{theorem}{$1}{$2}\n\t$0\n\\end{theorem}"},
+        { "trigger": "corollary", "contents": "\\begin{corollary}{$1}{$2}\n\t$0\n\\end{corollary}"},
+        { "trigger": "test_exercise\ttest exercise", "contents": "\\begin{testexercise}{$1}{$2}\n\t$0\n\\end{testexercise}"},
+        { "trigger": "todo\ttodo", "contents": "\\begin{todo}\n\t$1\n\t\\nextlevel\n\t$2\n\t\\nextlevel\n\t$3\n\\end{todo}$0"},
+        { "trigger": "pycode\t(...)", "contents": "\\begin{pycode}\n$0\n\\end{pycode}"},
+        { "trigger": "mat_delim\t(...)", "contents": "mat_delim=\"(\""},
+    ]
+}

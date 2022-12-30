@@ -1,0 +1,42 @@
+{
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"update_check": false,
+	"color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
+	"theme": "ayu-mirage.sublime-theme",
+	"dictionary": "Packages/Dictionaries/French.dic",
+	"added_words":
+	[
+		"Users",
+		"stephane",
+		"texlab",
+		"templates",
+	],
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html, text.xml",
+		},
+		{
+			"rhs_empty": true,
+			"selector": "punctuation.accessor",
+		},
+		{
+			"characters": "\\",
+			"selector": "text.tex.latex",
+		}
+	],
+	"font_face": "FiraCode Nerd Font Medium",
+	"font_size": 13,
+	"font_options": [
+		"dlig",
+	],
+	"gravity_highlight_color_orange": true,
+	"gravity_title_bar": true,
+	"auto_complete_cycle": true,
+	"auto_complete_use_history": true,
+	"auto_complete_preserve_order": "none"
+}

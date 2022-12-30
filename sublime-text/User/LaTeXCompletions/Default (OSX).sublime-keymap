@@ -1,0 +1,19 @@
+[
+    {
+        "keys": ["super+l", "super+s", "super+u"],
+        "context": [
+            {"key": "selector", "operator": "equal", "operand": "text.tex.latex"},
+        ],
+        "command": "insert_snippet",
+        "args": {
+            "name": "Packages/User/LaTeXCompletions/Maths/superscript.sublime-snippet"
+        }
+    },
+    {
+        "keys": ["super+l", "super+s", "super+d"],
+        "command": "insert_snippet",
+        "args": {
+            "name": "Packages/User/LaTeXCompletions/Maths/subscript.sublime-snippet"
+        }
+    }
+]

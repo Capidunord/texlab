@@ -1,0 +1,52 @@
+{
+    "scope": "text.tex.latex string.other.math, text.tex.latex meta.environment.math",
+
+    "completions":
+    [
+        { "trigger": "interval\tinterval", "contents": "\\itv{$1}{$2}{$3}{$4}$0"},
+        { "trigger": "integers interval\tintegers interval", "contents": "\\itve{$1}{$2}{$3}{$4}$0"},
+        { "trigger": "frac\tfraction", "contents": "\\frac{$1}{$2}$0"},
+        { "trigger": "sqrt\tsquare root", "contents": "\\sqrt{$1}$0"},
+        { "trigger": "sqrt\tn-th root", "contents": "\\sqrt[$1]{$2}$0"},
+        { "trigger": "integral\tintegral", "contents": "\\int_{$1}^{$2} $4 \\dd $3$0"},
+        { "trigger": "sum\tsum", "contents": "\\sum_{$1}^{$2} $0"},
+        { "trigger": "prod\tprod", "contents": "\\prod_{$1}^{$2} $0"},
+        { "trigger": "limit\tlimit", "contents": "\\lim_{$1} $0"},
+        { "trigger": "tends to\ttends to", "contents": "\\tdsto{$1} $0"},
+
+        // Sets
+        { "trigger": "setr\t IR", "contents": "\\setR"},
+        { "trigger": "setn\t IN", "contents": "\\setN"},
+        { "trigger": "setk\t IN", "contents": "\\setK"},
+        { "trigger": "setc\t IN", "contents": "\\setC"},
+
+        // Brackets, parenthesis...
+        { "trigger": "pth\t(...)", "contents": "\\pth{$1}$0"},
+        { "trigger": "squared brackets\t[...]", "contents": "\\sqbrackets{$1}$0"},
+        { "trigger": "vabs\t|...|", "contents": "\\vabs{$1}$0"},
+        { "trigger": "acc\t{...}", "contents": "\\acc{$1}$0"},
+
+        // Probas
+        { "trigger": "complementary\tcomplementary", "contents": "\\comp{$1}$0"},
+        { "trigger": "binom\tbinomial coeff", "contents": "\\binom{$1}{$2}$0"},
+
+        // Matrices
+        { "trigger": "pmatrix\tpmatrix", "contents": "\\begin{pmatrix}\n\t$0\n\\end{pmatrix}"},
+        { "trigger": "transp\t(...)", "contents": "\\transp{$1}$0"},
+
+        // Fonctions
+        { "trigger": "function\tfunction", "contents": "\\func{$1}{$2}{$3}{$4}{$5}$0"},
+
+        //superscript, subscript
+        { "trigger": "superscript\tsuperscript", "contents": "^{$1}$0"},
+        { "trigger": "subscript\tsubscript", "contents": "_{$1}$0"},
+
+        // Comparisons
+        { "trigger": "po\to", "contents": "\\po{$1}{$2}$0"},
+        { "trigger": "cong\tcongrus", "contents": "\\cong{$1}{$2}{$3}$0"},
+
+        { "trigger": "substack\t(...)", "contents": "\\substack{$1 \\\\ $2}$0"},
+        { "trigger": "mat_delim\t(...)", "contents": "mat_delim=\"(\""},
+        { "trigger": "binom\t(...)", "contents": "\\binom{$1}{$2}$0"},
+    ]
+}
