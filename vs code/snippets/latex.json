@@ -522,6 +522,16 @@
 
 	"mintinline": {
 		"prefix": "mintinline",
-		"body": "\\mintinline{#1}{#2}#0"
+		"body": "\\mintinline{$1}{$2}$0"
+	},
+
+	"ifstudent": {
+		"prefix": "ifstudent_space",
+		"body": "\\ifstudent ${1|\\v,\\h|}space{${2:3}cm} \\else $TM_SELECTED_TEXT \\fi"
+	},
+
+	"ifrating": {
+		"prefix": "ifrating",
+		"body": "\\ifstudent \\else \\rating{$1} \\fi"
 	}
 }

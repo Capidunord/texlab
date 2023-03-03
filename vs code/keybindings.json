@@ -1,0 +1,21 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+l cmd+s",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "langId": "latex",
+            "snippet": "_{$1}$0"
+        }
+    },
+    {
+        "key": "cmd+l cmd+u",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "langId": "latex",
+            "snippet": "^{$1}$0"
+        }
+    }
+]
