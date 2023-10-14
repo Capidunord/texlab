@@ -1,5 +1,5 @@
 $pdf_mode = 5;
-$xelatex = 'xelatex -shell-escape -interaction=nonstopmode -file-line-error -synctex=1 %O %S';
+$xelatex = 'xelatex -shell-escape -interaction=nonstopmode -synctex=1 %O %S';
 $recorder = 1;
 add_cus_dep('pytxcode', 'tex', 0, 'pythontex');
-sub pythontex { return system("python3 /usr/local/texlive/2020/texmf-dist/scripts/pythontex/pythontex3.py \"$_[0]\""); }
+sub pythontex { return system("python3.11 /usr/local/Cellar/texlive/20230313_2/share/texmf-dist/scripts/pythontex/pythontex3.py \"$_[0]\""); }
