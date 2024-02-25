@@ -1,7 +1,7 @@
 // Place your key bindings in this file to override the defaults
 [
     {
-        "key": "cmd+l cmd+s",
+        "key": "cmd+l cmd+d",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus",
         "args": {
