@@ -3,10 +3,12 @@
 
 % Couleurs
 \definecolor{theoremcolor}{RGB}{255,117,117}
-\definecolor{definitioncolor}{RGB}{111,214,145}
+% \definecolor{definitioncolor}{RGB}{111,214,145}
+\definecolor{definitioncolor}{RGB}{46,184,46}
 \definecolor{commandcolor}{RGB}{66,173,244}
 \definecolor{proofcolor}{RGB}{0,0,0}
 \definecolor{exercisecolor}{RGB}{255,199,122}
+% \definecolor{exercisecolor}{RGB}{46,145,184}
 \definecolor{remarkcolor}{RGB}{137,137,137}
 \definecolor{methodcolor}{RGB}{105,188,155}
 \definecolor{commentcolor}{RGB}{244,113,66}
@@ -30,7 +32,7 @@
             boxrule=0pt,
             arc=0mm,
             outer arc=0mm,
-            leftrule=4pt,
+            leftrule=2pt,
             bottomrule=0.5pt,
             toprule=0.5pt,
             rightrule=0.5pt,
@@ -43,10 +45,11 @@
 % Théorèmes
 \tcbset{
     theorembox/.style={
-            colframe=theoremcolor,
-            colback=theoremcolor!5,
-            coltitle=theoremcolor!20!black,
+            colframe=theoremcolor!80,
+            colback=theoremcolor!2,
+            coltitle=theoremcolor!50!black,
             title style={theoremcolor!50},
+        %     fonttitle=\sc
         }
 }
 
@@ -65,10 +68,11 @@
 % Définition
 \tcbset{
     definitionbox/.style={
-            colframe=definitioncolor,
-            colback=definitioncolor!5,
-            coltitle=definitioncolor!20!black,
-            title style={definitioncolor!50},
+            colframe=definitioncolor!70,
+            colback=definitioncolor!2,
+            coltitle=definitioncolor!70!black,
+            title style={definitioncolor!30},
+        %     fonttitle=\sc
         }
 }
 
@@ -82,6 +86,7 @@
             colback=commandcolor!5,
             coltitle=commandcolor!20!black,
             title style={commandcolor!50},
+        %     fonttitle=\sc
         }
 }
 
@@ -91,10 +96,11 @@
 % Exercices
 \tcbset{
     exercisebox/.style={
-            colframe=exercisecolor,
-            colback=exercisecolor!5,
-            coltitle=exercisecolor!20!black,
-            title style={exercisecolor!50},
+            colframe=exercisecolor!70,
+            colback=exercisecolor!2,
+            coltitle=exercisecolor!50!black,
+            title style={exercisecolor!40},
+        %     fonttitle=\sc
         }
 }
 
@@ -141,7 +147,7 @@ borderline west={1mm}{0pt}{exercisecolor}}
     remarkbox/.style={
             breakable,
             enhanced,
-            colback=remarkcolor!5,
+            colback=remarkcolor!2,
             colframe=remarkcolor,
             arc=0pt,
             outer arc=0pt,
