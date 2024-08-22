@@ -1,4 +1,4 @@
-\usepackage{fontspec}
+% \usepackage{fontspec}
 %\usepackage{etex}
 
 \usepackage{titletoc}
@@ -31,13 +31,17 @@
 % \usepackage{microtype} % Slightly tweak font spacing for aesthetics
 % \usepackage{tgpagella}
 
-\usepackage[bitstream-charter]{mathdesign} % Désactiver amsmath
+% \usepackage[bitstream-charter]{mathdesign} % Désactiver amsmath
+\usepackage{unicode-math}
+\setmainfont{XCharter}
+\setmonofont{Latin Modern Mono}[Scale = MatchLowercase]
+\setmathfont{XCharter Math}
 
 % \setmainfont{Libertinus Serif}
 % \setmathfont{Libertinus Math}
 
 % \usepackage{notomath}
-\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+% \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
 
 \usepackage{caption}
 

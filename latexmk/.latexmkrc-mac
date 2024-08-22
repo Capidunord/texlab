@@ -1,5 +1,6 @@
-$pdf_mode = 5;
+$pdf_mode = 4;
 $xelatex = 'xelatex -shell-escape -interaction=nonstopmode -file-line-error -synctex=1 %O %S';
+$lualatex = 'lualatex -shell-escape -interaction=nonstopmode -file-line-error -synctex=1 %O %S';
 $recorder = 1;
 add_cus_dep('pytxcode', 'tex', 0, 'pythontex');
-sub pythontex { return system("python3.12 /usr/local/Cellar/texlive/20230313_3/share/texmf-dist/scripts/pythontex/pythontex3.py \"$_[0]\" --interpreter \"python:/Users/stephane/.venvs/sciences/bin/python\""); }
+sub pythontex { return system("pythontex \"$_[0]\" --interpreter \"python:/Users/stephanecapdevielle/.venvs/sciences/bin/python\""); }
