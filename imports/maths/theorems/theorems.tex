@@ -23,7 +23,7 @@
 \definecolor{todolv3color}{RGB}{255,117,117}
 \definecolor{bigtodocolor}{RGB}{100,100,100}
 
-\newcounter{dummy}
+\newcounter{propertiescounter}
 
 % Général
 \tcbset{
@@ -53,16 +53,16 @@
         }
 }
 
-\newtcbtheorem[use counter=dummy, number within=section]{theorem}{Théorème}{globalbox,theorembox,label type=theorem}{theorems}
+\newtcbtheorem[use counter=propertiescounter, number within=section]{theorem}{Théorème}{globalbox,theorembox,}{theorems}
 % \crefname{theorem}{Théorème}{Théorèmes}
 
-\newtcbtheorem[use counter=dummy, number within=section]{property}{Propriété}{globalbox,theorembox,label type=property}{properties}
+\newtcbtheorem[use counter=propertiescounter, number within=section]{property}{Propriété}{globalbox,theorembox}{properties}
 % \crefname{property}{Propriété}{Propriétés}
 
-\newtcbtheorem[use counter=dummy, number within=section]{corollary}{Corollaire}{globalbox,theorembox,label type=corollary}{corollaries}
+\newtcbtheorem[use counter=propertiescounter, number within=section]{corollary}{Corollaire}{globalbox,theorembox}{corollaries}
 % \crefname{corollary}{Corollaire}{Corollaires}
 
-\newtcbtheorem[use counter=dummy, number within=section]{lemma}{Lemme}{globalbox,theorembox,label type=lemma}{lemmas}
+\newtcbtheorem[use counter=propertiescounter, number within=section]{lemma}{Lemme}{globalbox,theorembox}{lemmas}
 % \crefname{lemma}{Lemme}{Lemmes}
 
 % Définition
@@ -76,7 +76,7 @@
         }
 }
 
-\newtcbtheorem[use counter=dummy, number within=section]{definition}{Définition}{globalbox,definitionbox,label type=definition}{definitions}
+\newtcbtheorem[use counter=propertiescounter, number within=section]{definition}{Définition}{globalbox,definitionbox}{definitions}
 % \crefname{definition}{Définition}{Définitions}
 
 % Commandes
@@ -90,7 +90,7 @@
         }
 }
 
-\newtcbtheorem[use counter=dummy, number within=section]{command}{Commande}{globalbox,commandbox,label type=command}{commands}
+\newtcbtheorem[use counter=propertiescounter, number within=section]{command}{Commande}{globalbox,commandbox}{commands}
 % \crefname{command}{Commande}{Commandes}
 
 % Exercices
@@ -104,10 +104,10 @@
         }
 }
 
-\newtcbtheorem[use counter=dummy, number within=section]{exercise}{Exercice}{globalbox,exercisebox,label type=exercise}{exercises}
+\newtcbtheorem[use counter=propertiescounter, number within=section]{exercise}{Exercice}{globalbox,exercisebox}{exercises}
 % \crefname{exercise}{Exercice}{Exercices}
 
-\newtcbtheorem[use counter=dummy, number within=section]{example}{Exemple}{globalbox,exercisebox,label type=example, leftrule=0pt, rightrule=0pt}{examples}
+\newtcbtheorem[use counter=propertiescounter, number within=section]{example}{Exemple}{globalbox,exercisebox, leftrule=0pt, rightrule=0pt}{examples}
 % \crefname{example}{Exemple}{Exemples}
 
 % Exercices de DS
@@ -120,7 +120,7 @@
         }
 }
 
-\newtcbtheorem{testexercise}{Exercice}{globalbox,testexercisebox,label type=testexercise}{testexercises}
+\newtcbtheorem{testexercise}{Exercice}{globalbox,testexercisebox}{testexercises}
 % \crefname{testexercise}{Exercice}{Exercices}
 
 % Correction d'exercice
@@ -166,7 +166,7 @@ borderline west={1mm}{0pt}{exercisecolor}}
         }
 }
 
-\newtcbtheorem[use counter=dummy, number within=section]{remark}{Remarque}{remarkbox,label type=remark}{remarks}
+\newtcbtheorem[use counter=propertiescounter, number within=section]{remark}{Remarque}{remarkbox}{remarks}
 % \crefname{remark}{Remarque}{Remarques}
 
 % Méthode
@@ -186,7 +186,7 @@ borderline west={1mm}{0pt}{exercisecolor}}
         }
 }
 
-\newtcbtheorem[use counter=dummy, number within=section]{method}{Méthode}{remarkbox,methodbox, label type=method}{methods}
+\newtcbtheorem[use counter=propertiescounter, number within=section]{method}{Méthode}{remarkbox,methodbox}{methods}
 % \crefname{method}{Méthode}{Méthodes}
 
 % Commentaire
@@ -358,7 +358,7 @@ borderline west={1mm}{0pt}{proofcolor}}
 \newcounter{subject}
 % \newtcbtheorem[use counter=subject]{subject}{Sujet}{remarkbox,subjectbox,breakable=true}{subjects}
 \newtcbtheorem[use counter=subject]{subject}{Sujet}{globalbox,subjectbox,breakable=true}{subjects}
-\newtcbtheorem[number within=subject]{subjectexercise}{Exercice}{globalbox,exercisebox,label type=exercise}{exercises}
+\newtcbtheorem[number within=subject]{subjectexercise}{Exercice}{globalbox,exercisebox}{exercises}
 
 \newtcbox{\rating}{enhanced,nobeforeafter,tcbox raise base,boxrule=0.4pt,top=0mm,bottom=0mm,
   right=0mm,left=4mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}},
