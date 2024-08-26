@@ -11,13 +11,14 @@
         arc=1pt,
         outer arc=1pt,
         listing engine=minted,
-        minted style=manni,
+        minted style=tango,
         minted options={breaklines,linenos,autogobble,numbersep=3mm},
         left=5mm,
         breakable,
-        overlay={\begin{tcbclipinterior}\fill[red!20!blue!20!white] (frame.south west)rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}},
+        overlay={\begin{tcbclipinterior}\fill[blue!10] (frame.south west)rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}},
         boxrule=1pt,
         colframe=gray,
+        colback=gray!5
     }
 }
 
