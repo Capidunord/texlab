@@ -1,8 +1,8 @@
 \usepackage{stmaryrd}
 
 % Inégalités
-\renewcommand{\leq}{\leqslant}
-\renewcommand{\geq}{\geqslant}
+\AtBeginDocument{\renewcommand{\leq}{\leqslant}}
+\AtBeginDocument{\renewcommand{\geq}{\geqslant}}
 
 % Parenthèses, valeurs absolues...
 \newcommand{\pth}[1]{\ensuremath{\left( #1 \right)}}
