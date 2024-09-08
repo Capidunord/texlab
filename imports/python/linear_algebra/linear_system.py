@@ -10,7 +10,7 @@ class System:
         self.Y = Y.copy()
 
     def to_latex(self):
-        result = '\left\{\\begin{array}{' + \
+        result = '\\left\\{\\begin{array}{' + \
                        'rc' * (self.A.cols - 1) + 'r' + 'cr' + '}\n'
         for i in range(0, self.A.rows):
             row = [self.A[i, j] for j in range(0, self.A.cols)]
@@ -20,7 +20,7 @@ class System:
                 line += ' \\\\'
             line += "\n"
             result += line
-        result += "\end{array}\\right."
+        result += "\\end{array}\\right."
         return result
 
     def transvection(self, row1, row2, factor=1):
